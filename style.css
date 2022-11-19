@@ -127,6 +127,10 @@ h2 {
   max-width: 500px;
 }
 
+.card1:hover {
+  box-shadow: 10px 10px 10px rgb(25, 30, 34);
+}
+
 .card2 {
   padding: 10px;
 }
