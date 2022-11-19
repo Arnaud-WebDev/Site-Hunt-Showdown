@@ -14,7 +14,7 @@ body {
 /* Barre de naviguation */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   background-color: rgb(25, 30, 34);
@@ -22,10 +22,7 @@ nav {
 }
 
 .logoNav {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+  width: 30px;
 }
 
 /* Donne la dimension et l'espace entre chaque catégorie de la barre de naviguation */
@@ -59,6 +56,16 @@ nav {
   }
 }
 
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Retire les points */
 .nav-links li {
   list-style: none;
@@ -83,6 +90,7 @@ nav {
   height: 3px;
   background-color: white;
   margin: 5px;
+  transition: all 0.3s ease;
 }
 /* Barre de naviguation FIN */
 
@@ -131,7 +139,7 @@ h2 {
 }
 
 .logo {
-  width: 60%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -159,16 +167,36 @@ h2 {
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1024px) {
+  /* BARRE DE NAVIGUATION */
   .nav-links {
     display: flex;
-    background-color: red;
+    flex-direction: row;
+    background-color: rgb(25, 30, 34);
     justify-content: space-around;
-    width: 35%;
+    width: 60%;
+    transform: translateX(0%);
+    height: 0vh;
+    top: 4vh;
+  }
+
+  /* Retire les points */
+  .nav-links li {
+    opacity: 1;
   }
 
   .burger {
     display: none;
   }
+
+  /* BARRE DE NAVIGUATION FIN */
+
+  /* LOGO */
+
+  .logo {
+    width: 30%;
+  }
+  /* LOGO FIN */
+
   .container {
     display: flex;
     justify-content: space-around;
@@ -180,15 +208,3 @@ h2 {
     margin: 20px;
   }
 }
-
-/* @media only screen and (min-width: 1220px) {
-  .card1 {
-    max-width: 350px;
-  }
-}
-
-@media only screen and (min-width: 1380px) {
-  .card1 {
-    max-width: 400px;
-  }
-} */
