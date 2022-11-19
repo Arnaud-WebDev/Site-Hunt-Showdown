@@ -10,6 +10,10 @@ body#armes {
   background-size: 100%;
 }
 
+body#video {
+  background: url(images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
+  background-size: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -246,6 +250,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 100px;
   }
 
   .card1 {
