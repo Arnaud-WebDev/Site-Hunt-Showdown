@@ -6,17 +6,22 @@ body {
 
 body#accueil {
   background: url(images/Hunt-Mobile-Wallpaper-7-610x1084.jpg) fixed no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 body#armes {
   background: url(images/Hunt-Mobile-Wallpaper-1-610x1084.jpg) fixed no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 body#video {
   background: url(images/Hunt-Mobile-Wallpaper-5-610x1084.jpg) fixed no-repeat center;
-  background-size: 100%;
+  background-size: cover;
+}
+
+body#patchnotes {
+  background: url(images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
+  background-size: cover;
 }
 * {
   margin: 0;
@@ -129,7 +134,9 @@ h2 {
 }
 
 /* Card */
-
+.container {
+  padding: 30px;
+}
 .card1 {
   background-color: rgb(25, 30, 34);
   padding-bottom: 1em;
@@ -228,15 +235,22 @@ iframe {
 
   body#accueil {
     background: url(images/Hunt-Wallpaper-8-1920x1080.jpg) fixed no-repeat center;
+    background-size: cover;
   }
 
   body#armes {
     background: url(images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
+    background-size: cover;
   }
 
   body#video {
     background: url(images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
-    background-size: 100%;
+    background-size: cover;
+  }
+
+  body#patchnotes {
+    background: url(images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
+    background-size: cover;
   }
 
   /* BACKGROUND IMAGE FIN */
