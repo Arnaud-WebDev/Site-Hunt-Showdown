@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&family=Smokum&family=Tinos&display=swap");
 
+body {
+  overflow-x: hidden;
+}
+
 body#accueil {
   background: url(images/Wallpaper_4K.jpg) fixed no-repeat center;
   background-size: 100%;
 }
 
 body#armes {
-  background: url(images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
+  background: url(images/Hunt-Mobile-Wallpaper-1-610x1084.jpg) fixed no-repeat center;
   background-size: 100%;
 }
 
 body#video {
-  background: url(images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
+  background: url(images/Hunt-Mobile-Wallpaper-5-610x1084.jpg) fixed no-repeat center;
   background-size: 100%;
 }
 * {
@@ -220,6 +224,22 @@ iframe {
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* BACKGROUND IMAGE */
+
+  body#armes {
+    background: url(images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
+  }
+
+  body#video {
+    background: url(images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
+    background-size: 100%;
+  }
+
+  /* BACKGROUND IMAGE FIN */
+
   /* BARRE DE NAVIGUATION */
   .nav-links {
     display: flex;
