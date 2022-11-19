@@ -137,7 +137,9 @@ h2 {
 /* Card */
 .container {
   padding: 30px;
+  margin-bottom: 100px;
 }
+
 .card1 {
   background-color: rgb(25, 30, 34);
   padding-bottom: 1em;
