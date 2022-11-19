@@ -165,7 +165,42 @@ h2 {
 }
 /* Card */
 
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(25, 30, 34);
+  color: white;
+  font-family: "Tinos", sans-serif;
+  height: 90px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+/* FOOTER FIN */
+
 /* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   /* BARRE DE NAVIGUATION */
   .nav-links {
