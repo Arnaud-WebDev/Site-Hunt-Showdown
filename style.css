@@ -226,6 +226,10 @@ iframe {
   width: 100%;
 }
 
+.flex-container p {
+  margin-bottom: 12px;
+}
+
 .flex-items {
   margin-bottom: 10px;
 }
