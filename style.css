@@ -23,6 +23,11 @@ body#patchnotes {
   background: url(images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
   background-size: cover;
 }
+
+body#lore {
+  background: url(images/Hunt-Wallpaper-3-1920x1080.jpg) fixed no-repeat center;
+  background-size: cover;
+}
 * {
   margin: 0;
   padding: 0;
@@ -199,6 +204,61 @@ iframe {
 
 /* Card */
 
+/* CARD LORE */
+
+.imageLore {
+  width: 200px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.flex-items {
+  margin-bottom: -4px;
+}
+
+.titleLore {
+  font-family: "Tinos", sans-serif;
+  margin-top: 10px;
+}
+
+.flex-items-description {
+  background-color: rgb(214, 215, 214);
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.flex-items-description p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
+}
+
+.flex-items-description em {
+  font-size: 0.8em;
+}
+
+.flex-items-description h3 {
+  font-family: "Smokum", sans-serif;
+  font-size: 2em;
+}
+
+/* CARD LORE FIN */
+
+/* BORDER LORE */
+
+.border {
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+/* BORDER LORE */
 /* FOOTER */
 
 .footer {
@@ -295,6 +355,7 @@ iframe {
   }
   /* LOGO FIN */
 
+  /* CARD VIDEO */
   .container {
     display: flex;
     justify-content: space-around;
@@ -306,4 +367,23 @@ iframe {
     max-width: 280px;
     margin: 20px;
   }
+
+  /* CARD VIDEO FIN */
+
+  /* CARD LORE */
+
+  .flex-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .titleLore {
+    margin-bottom: 20px;
+  }
+
+  .flex-items-description {
+    width: 50%;
+  }
+
+  /* CARD LORE FIN */
 }
