@@ -260,6 +260,16 @@ iframe {
   width: 100%;
 }
 
+.borderContainer {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.582);
+  width: 100%;
+  margin-top: 1px;
+}
+
+.pScrapbeak {
+  margin-bottom: 10px;
+}
+
 /* BORDER LORE */
 /* FOOTER */
 
