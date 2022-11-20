@@ -235,6 +235,7 @@ iframe {
   font-family: "Roboto", sans-serif;
   margin-left: 20px;
   margin-right: 20px;
+  position: relative;
 }
 
 .flex-items-description p {
@@ -249,6 +250,14 @@ iframe {
 .flex-items-description h3 {
   font-family: "Smokum", sans-serif;
   font-size: 2em;
+}
+
+.flex-items-description a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+  text-decoration: none;
 }
 
 /* CARD LORE FIN */
