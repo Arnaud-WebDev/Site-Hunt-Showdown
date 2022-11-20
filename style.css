@@ -28,6 +28,12 @@ body#lore {
   background: url(images/Hunt-Wallpaper-3-1920x1080.jpg) fixed no-repeat center;
   background-size: cover;
 }
+
+body#cleptobec {
+  background: url(images/scrapbeak3.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -230,7 +236,7 @@ iframe {
 }
 
 .flex-items-description {
-  background-color: rgb(214, 215, 214);
+  background-color: rgba(214, 215, 214, 0.897);
   padding: 30px;
   font-family: "Roboto", sans-serif;
   margin-left: 20px;
