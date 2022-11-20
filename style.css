@@ -205,7 +205,9 @@ iframe {
 /* Card */
 
 /* CARD LORE */
-
+.loreH1 {
+  font-family: "Smokum", sans-serif;
+}
 .imageLore {
   width: 200px;
 }
