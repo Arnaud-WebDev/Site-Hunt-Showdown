@@ -4,6 +4,11 @@ body {
   overflow-x: hidden;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body#accueil {
   background: url(images/Hunt-Wallpaper-8-1920x1080.jpg) fixed no-repeat center;
   background-size: cover;
@@ -34,10 +39,20 @@ body#cleptobec {
   background-size: cover;
 }
 
+body#assassin {
+  background: url(images/vincent_assassin.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.content {
+  min-height: 100%;
+  position: relative;
 }
 
 /* Barre de naviguation */
@@ -246,6 +261,18 @@ iframe {
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
+  width: 50%;
+}
+
+.description {
+  background-color: rgba(214, 215, 214, 0.897);
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  position: relative;
+  width: 50%;
 }
 
 .flex-items-description p {
@@ -263,6 +290,14 @@ iframe {
 }
 
 .flex-items-description a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+  text-decoration: none;
+}
+
+.description a {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -294,8 +329,8 @@ iframe {
 
 .footer {
   position: absolute;
-  position: fixed;
-  bottom: 0;
+  bottom: 0px;
+  left: 0px;
   width: 100%;
   background-color: rgb(25, 30, 34);
   color: white;
@@ -391,7 +426,9 @@ iframe {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
   }
 
   .card1 {
