@@ -58,24 +58,19 @@ body#assassin {
 /* BOUTTON */
 
 .btn {
-  height: 30px; /* 40px avec TOP */
-  width: 30px; /* 40px avec TOP */
+  height: 30px;
+  width: 30px;
   background: rgb(56, 66, 73);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*   flex-direction: column; */
   position: fixed;
   right: 20px;
   bottom: 80px;
   cursor: pointer;
   z-index: 1;
 }
-
-/* .btn p {
-  color: white;
-} */
 
 .fa-arrow-up-from-bracket {
   color: white;
