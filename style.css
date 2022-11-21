@@ -35,13 +35,18 @@ body#lore {
   background-size: cover;
 }
 
-body#cleptobec {
-  background: url(images/scrapbeak3.jpg) fixed no-repeat center;
+body#assassin {
+  background: url(images/vincent_assassin.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
-body#assassin {
+body#boucher {
   background: url(images/vincent_assassin.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#cleptobec {
+  background: url(images/scrapbeak3.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
