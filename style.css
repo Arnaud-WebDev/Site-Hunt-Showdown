@@ -261,7 +261,6 @@ iframe {
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  width: 50%;
 }
 
 .description {
@@ -272,7 +271,6 @@ iframe {
   margin-right: 20px;
   margin-bottom: 100px;
   position: relative;
-  width: 50%;
 }
 
 .flex-items-description p {
@@ -450,6 +448,10 @@ iframe {
   }
 
   .flex-items-description {
+    width: 50%;
+  }
+
+  .description {
     width: 50%;
   }
 
