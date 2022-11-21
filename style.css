@@ -291,16 +291,6 @@ iframe {
   position: relative;
 }
 
-.description {
-  background-color: rgba(214, 215, 214, 0.897);
-  padding: 30px;
-  font-family: "Roboto", sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 100px;
-  position: relative;
-}
-
 .flex-items-description p {
   font-family: "Roboto", sans-serif;
   margin-top: 6px;
@@ -323,12 +313,36 @@ iframe {
   text-decoration: none;
 }
 
+.description {
+  background-color: rgba(214, 215, 214, 0.897);
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
 .description a {
   position: absolute;
   right: 0;
   bottom: 0;
   color: black;
   text-decoration: none;
+}
+
+.description em {
+  font-size: 0.8em;
+}
+
+.description h3 {
+  font-family: "Smokum", sans-serif;
+  font-size: 2em;
+}
+
+.description p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
 }
 
 /* CARD LORE FIN */
