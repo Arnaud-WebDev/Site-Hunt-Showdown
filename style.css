@@ -58,19 +58,24 @@ body#assassin {
 /* BOUTTON */
 
 .btn {
-  height: 30px;
-  width: 30px;
+  height: 30px; /* 40px avec TOP */
+  width: 30px; /* 40px avec TOP */
   background: rgb(56, 66, 73);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /*   flex-direction: column; */
   position: fixed;
   right: 20px;
   bottom: 80px;
   cursor: pointer;
   z-index: 1;
 }
+
+/* .btn p {
+  color: white;
+} */
 
 .fa-arrow-up-from-bracket {
   color: white;
@@ -333,6 +338,7 @@ iframe {
 .border {
   border-bottom: 2px solid white;
   width: 100%;
+  margin-bottom: 3px;
 }
 
 .borderContainer {
@@ -391,8 +397,14 @@ iframe {
   /* BOUTON */
 
   .btn {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    right: 100px;
+    background: rgba(56, 66, 73, 0.897);
+  }
+
+  .fa-arrow-up-from-bracket {
+    font-size: 1.7em;
   }
   /* BOUTON FIN */
 
