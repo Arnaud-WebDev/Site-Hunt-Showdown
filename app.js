@@ -1,3 +1,4 @@
+// BARRE DE NAVIGATION
 const navSlide = () => {
   const burger = document.querySelector(".burger")
   const nav = document.querySelector(".nav-links")
@@ -21,3 +22,18 @@ const navSlide = () => {
 }
 
 navSlide()
+// BARRE DE NAVIGATION FIN
+
+// BOUTON POUR REMONTER EN HAUT
+
+const btn = document.querySelector(".btn")
+
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth", // permet de remonter tranquillement vers le haut
+  })
+})
+
+// BOUTON POUR REMONTER EN HAUT FIN
