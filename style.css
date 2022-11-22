@@ -45,8 +45,48 @@ body#boucher {
   background-size: cover;
 }
 
+body#araignee {
+  background: url(images/spider.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
 body#cleptobec {
   background: url(images/scrapbeak3.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#goule {
+  background: url(images/goule.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#cuirasse {
+  background: url(images/cuirasse.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#ruche {
+  background: url(images/ruche.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#immolateur {
+  background: url(images/immolateur.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#meathead {
+  background: url(images/meathead.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#cerbere {
+  background: url(images/cerbere.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#demons {
+  background: url(images/demons.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
@@ -292,6 +332,12 @@ iframe {
 .loreH1 {
   font-family: "Smokum", sans-serif;
 }
+
+.loreH1araignee {
+  letter-spacing: 1px;
+  font-family: "Smokum", sans-serif;
+}
+
 .imageLore {
   width: 200px;
 }
