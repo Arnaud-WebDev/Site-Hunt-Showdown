@@ -91,6 +91,7 @@ nav {
   align-items: center;
   background-color: rgb(25, 30, 34);
   font-family: "Tinos", sans-serif;
+  min-height: 8vh;
 }
 
 .logoNav {
@@ -488,9 +489,9 @@ iframe {
   /* BACKGROUND IMAGE FIN */
 
   /* BARRE DE NAVIGUATION */
-  nav {
-    min-height: 2vh;
-  }
+  /*  nav {
+    min-height: 8vh;
+  } */
   .nav-links {
     display: flex;
     flex-direction: row;
@@ -518,7 +519,7 @@ iframe {
   .navLore {
     position: absolute;
     position: fixed;
-    top: 67px;
+    top: 60px;
     left: 0px;
     background: rgba(25, 30, 34, 0.884);
     max-width: 15%;
