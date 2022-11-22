@@ -468,11 +468,12 @@ iframe {
   height: 100%;
   width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 th,
 td {
-  padding: 15px;
+  padding: 9px;
 }
 
 tbody tr,
@@ -482,7 +483,7 @@ th {
 }
 
 thead tr th {
-  background-color: rgb(25, 30, 34);
+  background-color: rgba(25, 30, 34, 0.904);
   color: white;
   text-align: center;
   font-family: "Tinos", sans-serif;
@@ -493,19 +494,23 @@ thead tr th {
 tbody tr td {
   color: white;
   text-align: center;
+}
+
+.table-style {
   font-size: 1.3em;
   font-weight: 900;
   width: 5%;
+  background-color: rgba(25, 30, 34, 0.904);
 }
 
 .image-arme {
   width: 100%;
 }
 
-.table-armes {
+/* .table-armes {
   width: 40%;
   transform: rotate(90deg);
-}
+} */
 
 .tableau-style {
   border-collapse: collapse;
@@ -700,9 +705,9 @@ tbody tr td {
 
   /* TABLEAU */
 
-  .table-armes {
+  /*  .table-armes {
     width: 40%;
     transform: rotate(0deg);
-  }
+  } */
   /* TABLEAU FIN */
 }
