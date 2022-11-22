@@ -464,8 +464,10 @@ iframe {
 
 /* TABLEAU */
 
-thead tr {
-  background-color: rgb(25, 30, 34);
+.table-scroll {
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
 }
 
 th,
@@ -480,12 +482,14 @@ th {
 }
 
 thead tr th {
+  background-color: rgb(25, 30, 34);
   color: white;
   text-align: center;
   font-family: "Tinos", sans-serif;
   font-size: 1.3em;
   font-weight: 500;
 }
+
 tbody tr td {
   color: white;
   text-align: center;
@@ -500,6 +504,7 @@ tbody tr td {
 
 .table-armes {
   width: 40%;
+  transform: rotate(90deg);
 }
 
 .tableau-style {
@@ -692,4 +697,12 @@ tbody tr td {
   }
 
   /* CARD LORE FIN */
+
+  /* TABLEAU */
+
+  .table-armes {
+    width: 40%;
+    transform: rotate(0deg);
+  }
+  /* TABLEAU FIN */
 }
