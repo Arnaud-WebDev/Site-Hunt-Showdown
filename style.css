@@ -519,7 +519,7 @@ iframe {
   .navLore {
     position: absolute;
     position: fixed;
-    top: 60px;
+    top: 67px;
     left: 0px;
     background: rgba(25, 30, 34, 0.884);
     max-width: 15%;
