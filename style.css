@@ -252,6 +252,13 @@ h2 {
   text-align: center;
 }
 
+.H2armes {
+  text-align: start;
+  margin-left: 20px;
+  font-size: 2em;
+  font-family: "Tinos", sans-serif;
+}
+
 /* Title Fin */
 
 .underline {
@@ -454,6 +461,68 @@ iframe {
 }
 
 /* BORDER LORE */
+
+/* TABLEAU */
+
+thead tr {
+  background-color: rgb(25, 30, 34);
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tbody tr,
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+thead tr th {
+  color: white;
+  text-align: center;
+  font-family: "Tinos", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+tbody tr td {
+  color: white;
+  text-align: center;
+}
+
+.image-arme {
+  width: 100%;
+}
+
+.table-armes {
+  width: 40%;
+}
+
+.table-price {
+  font-size: 1.6em;
+  font-weight: 900;
+  width: 5%;
+}
+
+.tableau-style {
+  border-collapse: collapse;
+  max-width: 100%;
+  border: 2px solid white;
+  margin: 20px;
+}
+
+.flex-container-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* TABLEAU FIN  */
+
 /* FOOTER */
 
 .footer {
