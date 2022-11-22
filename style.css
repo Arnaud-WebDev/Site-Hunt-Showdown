@@ -503,14 +503,13 @@ tbody tr td {
   background-color: rgba(25, 30, 34, 0.904);
 }
 
+.table-armes {
+  background-color: rgba(25, 30, 34, 0.904);
+}
+
 .image-arme {
   width: 100%;
 }
-
-/* .table-armes {
-  width: 40%;
-  transform: rotate(90deg);
-} */
 
 .tableau-style {
   border-collapse: collapse;
@@ -705,9 +704,5 @@ tbody tr td {
 
   /* TABLEAU */
 
-  /*  .table-armes {
-    width: 40%;
-    transform: rotate(0deg);
-  } */
   /* TABLEAU FIN */
 }
