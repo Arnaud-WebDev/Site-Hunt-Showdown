@@ -41,7 +41,7 @@ body#assassin {
 }
 
 body#boucher {
-  background: url(images/vincent_assassin.jpg) fixed no-repeat center;
+  background: url(images/boucher.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
@@ -213,6 +213,10 @@ h2 {
 
 /* Title Fin */
 
+.underline {
+  text-decoration: underline;
+}
+
 .tinos {
   font-family: "Tinos", sans-serif;
   font-weight: lighter;
@@ -373,6 +377,13 @@ iframe {
 .description p {
   font-family: "Roboto", sans-serif;
   margin-top: 6px;
+}
+
+.description h5 {
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /* CARD LORE FIN */
