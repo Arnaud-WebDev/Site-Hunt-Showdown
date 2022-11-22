@@ -489,6 +489,9 @@ thead tr th {
 tbody tr td {
   color: white;
   text-align: center;
+  font-size: 1.3em;
+  font-weight: 900;
+  width: 5%;
 }
 
 .image-arme {
@@ -497,12 +500,6 @@ tbody tr td {
 
 .table-armes {
   width: 40%;
-}
-
-.table-price {
-  font-size: 1.6em;
-  font-weight: 900;
-  width: 5%;
 }
 
 .tableau-style {
