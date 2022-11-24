@@ -26,7 +26,7 @@ navSlide()
 
 // BOUTON POUR REMONTER EN HAUT
 
-const btn = document.querySelector(".btn")
+const btn = document.querySelector(".btn, .btn-armes")
 
 btn.addEventListener("click", () => {
   window.scrollTo({
