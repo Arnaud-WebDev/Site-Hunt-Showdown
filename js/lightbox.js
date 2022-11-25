@@ -11,7 +11,6 @@ class Lightbox {
   static init() {
     const links = Array.from(document.querySelectorAll('a[href$=".png"], a[href$=".jpg"], a[href$=".jpeg"]'))
     const gallery = links.map((link) => link.getAttribute("href"))
-
     links.forEach((link) =>
       link.addEventListener("click", (e) => {
         e.preventDefault()
@@ -20,8 +19,8 @@ class Lightbox {
     )
   }
 
-  /*  @parm {string} url URL de l'image */
-  /*  @parm {string[]} images Chemmins des images de la lightbox */
+  /*  @param {string} url URL de l'image */
+  /*  @param {string[]} images Chemmins des images de la lightbox */
 
   constructor(url, images) {
     this.element = this.buildDOM(url)
@@ -103,7 +102,7 @@ Image suivante
   buildDOM(url) {
     const dom = document.createElement("div")
     dom.classList.add("lightbox")
-    dom.innerHTML = ` <button class="lightbox__close">Fermer</button>
+    dom.innerHTML = ` <button class="lightbox__close">Fermer</button>   
         <button class="lightbox__next">Suivant</button>
         <button class="lightbox__prev">Précédent</button>
         <div class="lightbox__container"></div>`
@@ -117,6 +116,8 @@ Image suivante
 Lightbox.init()
 /* LIGHTBOX FIN */
 
+/* <header class="lightbox__header"></header> configuration pour plus tard de l'aspect du header */
+/*  <p class="lightbox__text"></p> */
 /*  <div class="lightbox">
         <button class="lightbox__close">Fermer</button>
         <button class="lightbox__next">Suivant</button>
@@ -125,3 +126,26 @@ Lightbox.init()
           <img src="./images/armes/winfield-M1873C.png" alt="Image winfield M1873C">
         </div>
       </div> */
+
+/*    containerText.appendChild(text) */
+
+/*    containerText.innerText = ""
+    console.log(containerText, "containerText") */
+
+/* const containerText = this.element.querySelector(".lightbox__text") */
+/*   const text = new Text() */
+
+/*     linksWeapon.forEach((weapon) =>
+      weapon.addEventListener("click", (e) => {
+        e.preventDefault()
+        new Lightbox((nameWeapon.innerText = ""))
+      })
+    ) */
+
+/*   const linksWeapon = Array.from(document.querySelectorAll("td.table-armes > p"))
+    console.log(linksWeapon, "linksWeapon")
+
+    const nameWeapon = linksWeapon.map((weapon) => weapon.innerText)
+    console.log(nameWeapon, "nameWeapon") */
+
+/* , td.table-armes > p */
