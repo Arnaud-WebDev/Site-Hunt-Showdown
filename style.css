@@ -393,7 +393,7 @@ iframe {
   background-color: rgb(43, 46, 52);
   margin: 20px;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 70%;
 }
 
@@ -416,10 +416,6 @@ iframe {
 .patchnotes-container p,
 em {
   color: white;
-}
-.patchnotes-container h4 {
-  color: white;
-  font-size: 1.5rem;
 }
 .patchnotes-container h1 {
   font-weight: lighter;
@@ -445,11 +441,15 @@ em {
   color: white;
   margin-top: 20px;
 }
+.patchnotes-container h4 {
+  color: white;
+  font-size: 1.2rem; /* 1.5 */
+}
 .patchnotes-container ul li {
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.9rem; /* 1.1rem */
   margin: 30px;
-  width: 95%;
+  width: 80%; /* 95% */
 }
 
 .patchnoteLi {
@@ -860,8 +860,17 @@ caption {
     font-size: 3rem;
   }
 
+  .patchnotes-container h4 {
+    font-size: 1.7rem;
+  }
   .patchnotes--h1 h1 {
     font-size: 1.4rem;
   }
+
+  .patchnotes-container ul li {
+    font-size: 1.1rem;
+    width: 95%;
+  }
+
   /* PAGE PATCHNOTES FIN */
 }
