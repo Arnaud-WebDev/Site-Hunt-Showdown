@@ -416,6 +416,7 @@ iframe {
 .patchnotes-container p,
 em {
   color: white;
+  text-align: center;
 }
 .patchnotes-container h1 {
   font-weight: lighter;
