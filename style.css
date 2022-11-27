@@ -426,6 +426,7 @@ iframe {
 em {
   color: white;
   text-align: center;
+  margin-bottom: 20px;
 }
 .patchnotes-container h1 {
   font-weight: lighter;
@@ -453,7 +454,8 @@ em {
 }
 .patchnotes-container h4 {
   color: white;
-  font-size: 1.2rem; /* 1.5 */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 .patchnotes-container ul li {
   color: white;
