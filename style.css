@@ -292,8 +292,48 @@ h2 {
   font-family: "Tinos", sans-serif;
   font-weight: lighter;
 }
+/* PAGE INDEX */
+.container-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /*   border: 4px solid black; */
+}
 
-/* Card */
+.card-index {
+  margin: 20px;
+  width: 90%;
+  border: 1px solid black;
+  background-color: rgb(25, 30, 34);
+}
+
+.container-index img {
+  width: 100%;
+}
+.container-index h3 {
+  color: white;
+  font-family: "Tinos", sans-serif;
+  margin-bottom: 10px;
+}
+.container-index p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 25px;
+}
+.card-index-description {
+  padding: 10px;
+}
+.card-index-description a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: rgb(99, 25, 28);
+}
+
+/* PAGE INDEX FIN */
+
+/* CARD VIDEO*/
 .container {
   padding: 30px;
   margin-bottom: 100px;
@@ -356,7 +396,7 @@ iframe {
   border: 0;
 }
 
-/* Card */
+/* CARD VIDEO FIN */
 
 /* CARD LORE */
 .loreH1 {
@@ -425,6 +465,11 @@ iframe {
 
 .patchnotes-container p,
 em {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.patchnotes-container em {
   color: white;
   text-align: center;
   margin-bottom: 20px;
@@ -499,6 +544,7 @@ em {
 }
 
 .flex-items-description em {
+  color: black;
   font-size: 0.8em;
 }
 
@@ -534,6 +580,7 @@ em {
 }
 
 .description em {
+  color: black;
   font-size: 0.8em;
 }
 
@@ -803,6 +850,12 @@ caption {
   }
   /* LOGO FIN */
 
+  /* PAGE INDEX */
+  .card-index {
+    width: 33%;
+  }
+  /* PAGE INDEX FIN */
+
   /* CARD VIDEO */
   .container {
     display: flex;
@@ -834,9 +887,15 @@ caption {
   .flex-items-description {
     width: 50%;
   }
+  .flex-items-description em {
+    font-size: 1rem;
+  }
 
   .description {
     width: 50%;
+  }
+  .description em {
+    font-size: 1rem;
   }
 
   /* CARD LORE FIN */
