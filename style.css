@@ -157,6 +157,7 @@ nav {
 
 .logoNav {
   width: 30px;
+  margin-left: 40px;
 }
 
 /* Donne la dimension et l'espace entre chaque catégorie de la barre de naviguation */
@@ -377,6 +378,9 @@ iframe {
   margin-bottom: 100px;
   width: 100%;
 }
+.container--ul {
+  width: 100%;
+}
 .flex-container-patchnotes {
   display: flex;
   flex-direction: column;
@@ -391,10 +395,15 @@ iframe {
 }
 .patchnotes--h1 h1 {
   background-color: rgb(43, 46, 52);
-  margin: 20px;
-  padding: 10px;
-  font-size: 0.9rem;
-  width: 70%;
+  /*  margin: 20px;
+  padding: 10px; */
+  font-size: 0.8rem;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 15px 15px;
 }
 
 .patchnotes--image {
@@ -443,7 +452,6 @@ em {
   margin-top: 20px;
 }
 .patchnotes-container h4 {
-  text-align: center;
   color: white;
   font-size: 1.2rem; /* 1.5 */
 }
@@ -848,7 +856,12 @@ caption {
   /* TABLEAU FIN */
 
   /* PAGE PATCHNOTES */
-
+  .container--h4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .patchnotes-container {
     width: 60%;
   }
