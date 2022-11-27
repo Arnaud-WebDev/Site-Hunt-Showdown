@@ -157,7 +157,7 @@ nav {
 
 .logoNav {
   width: 30px;
-  margin-left: 40px;
+  margin-left: 15px;
 }
 
 /* Donne la dimension et l'espace entre chaque catégorie de la barre de naviguation */
@@ -220,6 +220,7 @@ nav {
 .burger {
   display: block;
   cursor: pointer;
+  margin-right: 10px;
 }
 .burger div {
   width: 25px;
@@ -675,7 +676,7 @@ caption {
   background-color: rgb(25, 30, 34);
   color: white;
   font-family: "Tinos", sans-serif;
-  height: 70px;
+  height: 85px;
 }
 
 .footer ul {
@@ -696,11 +697,6 @@ caption {
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 600px) {
-  .footer ul {
-    display: flex;
-    flex-direction: row;
-  }
-
   .nav-links {
     width: 30%;
   }
@@ -890,4 +886,12 @@ caption {
   }
 
   /* PAGE PATCHNOTES FIN */
+
+  /* FOOTER */
+
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  /* FOOTER FIN */
 }
