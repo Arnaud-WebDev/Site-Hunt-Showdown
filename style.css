@@ -95,6 +95,9 @@ body#demons {
   background: url(images/demons.jpg) fixed no-repeat center;
   background-size: cover;
 }
+body#stalker-bettle {
+  background-color: rgb(12, 16, 19);
+}
 
 * {
   margin: 0;
@@ -623,7 +626,7 @@ em {
 
 /* BORDER LORE */
 
-/* TABLEAU */
+/* TABLEAU ARMES */
 
 .invisible-margin {
   width: 100%;
@@ -711,7 +714,50 @@ caption {
   width: 100%;
 }
 
-/* TABLEAU FIN  */
+/* TABLEAU ARMES FIN  */
+
+/* PAGE DES NEWS */
+.news-article-background {
+  background: url(./images/stalkerbeetle.png) repeat scroll center center / cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.news-article-title h1 {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  font-family: "Rye", sans-serif;
+  font-size: 1.6rem;
+}
+
+.news-article {
+  padding: 12px;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-family: "Tinos", sans-serif;
+}
+.news-article-container {
+  width: 100%;
+}
+.news-article-container h2 {
+  font-family: "Rye", sans-serif;
+  font-style: normal;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.news-article-container p {
+  margin-top: 30px;
+}
+/* PAGE DES NEWS FIN */
 
 /* FOOTER */
 
@@ -945,6 +991,25 @@ caption {
   }
 
   /* PAGE PATCHNOTES FIN */
+
+  /* PAGE DES NEWS  */
+
+  .news-article-title h1 {
+    text-align: start;
+    font-size: 3rem;
+    bottom: 10%;
+    left: 70px;
+  }
+  .news-article-container h2 {
+    text-align: start;
+  }
+
+  .news-article {
+    margin-left: 60px;
+    width: 50%;
+    text-align: start;
+  }
+  /* PAGE DES NEWS FIN */
 
   /* FOOTER */
 
