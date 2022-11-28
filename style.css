@@ -241,7 +241,7 @@ nav {
   position: absolute;
   top: 50px;
   width: 100%;
-  max-height: 100px;
+  max-height: 130px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -414,6 +414,10 @@ iframe {
 /* CARD VIDEO FIN */
 
 /* CARD LORE */
+.container-title-lore {
+  margin-top: 130px;
+  margin-bottom: 10px;
+}
 .loreH1 {
   font-family: "Smokum", sans-serif;
 }
@@ -922,6 +926,9 @@ caption {
   /* BARRE DE NAVIGUATION FIN */
 
   /* BARRE DE NAVIGATION LORE  */
+  .container-title-lore {
+    margin-top: 20px;
+  }
 
   .navLore {
     position: absolute;
