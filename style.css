@@ -789,6 +789,10 @@ caption {
 .news-article-container p {
   margin-top: 30px;
 }
+.news-article-container-ul {
+  margin-left: 20px;
+  text-align: start;
+}
 .container-mama-maye {
   display: flex;
   justify-content: center;
