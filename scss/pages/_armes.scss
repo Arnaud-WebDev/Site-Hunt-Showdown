@@ -1,0 +1,126 @@
+body#armes {
+  background: url(/images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#armes p {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.H2armes {
+  text-align: center;
+  margin-left: 20px;
+  font-size: 2em;
+  font-family: "Tinos", sans-serif;
+}
+/* TABLEAU ARMES */
+
+.invisible-margin {
+  width: 100%;
+  height: 100px;
+}
+.invisible-margin-video {
+  width: 100%;
+  height: 10px;
+}
+
+.table-scroll {
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+th,
+td {
+  padding: 9px;
+}
+
+tbody tr,
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+thead tr th {
+  background-color: rgb(25, 30, 34); /* Trandsparence 0.904 */
+  color: white;
+  text-align: center;
+  font-family: "Tinos", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+tbody tr td {
+  color: white;
+  text-align: center;
+}
+
+caption {
+  padding: 10px;
+  background-color: rgba(25, 30, 34, 0.904);
+}
+
+.table-style {
+  font-size: 1.3em;
+  font-weight: 900;
+  width: 5%;
+  background-color: rgb(25, 30, 34); /* Transparence 0.904 */
+}
+
+.table-style-underline {
+  text-decoration: underline;
+  font-size: 1.3em;
+  font-weight: 900;
+  width: 5%;
+  background-color: rgb(25, 30, 34);
+}
+
+.table-armes {
+  background-color: rgb(25, 30, 34);
+  width: 20%;
+}
+
+.image-arme {
+  width: 100%;
+}
+
+.tableau-style {
+  border-collapse: collapse;
+  max-width: 100%;
+  border: 2px solid white;
+  margin: 20px 10px 0px 10px;
+}
+
+.flex-container-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* TABLEAU ARMES FIN  */
+
+/* BACKGROUND IMAGE */
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  /* TABLEAU */
+
+  .tableau-style {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .invisible-margin-video {
+    height: 0px;
+  }
+  /* TABLEAU FIN */
+}

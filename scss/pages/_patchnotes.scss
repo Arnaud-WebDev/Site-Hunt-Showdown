@@ -1,0 +1,139 @@
+body#patchnotes {
+  background: url(/images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+.container--ul {
+  width: 100%;
+}
+
+.flex-container-patchnotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.patchnotes--h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.patchnotes--h1 h1 {
+  background-color: rgb(43, 46, 52);
+  /*  margin: 20px;
+  padding: 10px; */
+  font-size: 0.8rem;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.patchnotes--image {
+  width: 100%;
+}
+
+.patchnotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(43, 46, 52, 0.986);
+  width: 80%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding: 20px;
+}
+
+.patchnotes-container p,
+em {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.patchnotes-container em {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.patchnotes-container h1 {
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+.patchnotes-container h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-family: "Rye", sans-serif;
+  background-color: rgb(236, 215, 215);
+  color: black;
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.patchnotes-container h3 {
+  color: white;
+  margin-top: 20px;
+}
+.patchnotes-container h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.patchnotes-container ul li {
+  color: white;
+  font-size: 0.9rem; /* 1.1rem */
+  margin: 30px;
+  width: 80%; /* 95% */
+}
+
+.patchnoteLi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  /* PAGE PATCHNOTES */
+  .container--h4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .patchnotes-container {
+    width: 60%;
+  }
+
+  .patchnotes-container h2 {
+    width: 50%;
+    font-size: 1.6rem;
+  }
+
+  .patchnotes-container h1 {
+    font-size: 3rem;
+  }
+
+  .patchnotes-container h4 {
+    font-size: 1.7rem;
+  }
+  .patchnotes--h1 h1 {
+    font-size: 1.4rem;
+  }
+
+  .patchnotes-container ul li {
+    font-size: 1.1rem;
+    width: 95%;
+  }
+
+  /* PAGE PATCHNOTES FIN */
+}

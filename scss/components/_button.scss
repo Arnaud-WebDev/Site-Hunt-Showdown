@@ -1,0 +1,60 @@
+/* BOUTTON */
+
+.btn {
+  height: 30px;
+  width: 30px;
+  background: rgb(56, 66, 73);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-armes {
+  height: 30px;
+  width: 30px;
+  background: rgb(56, 66, 73);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.fa-arrow-up-from-bracket {
+  color: white;
+}
+
+/* BOUTTON FIN */
+
+@media only screen and (min-width: 1024px) {
+  /* BOUTON */
+
+  .btn {
+    width: 70px;
+    height: 70px;
+    right: 100px;
+    background: rgba(56, 66, 73, 0.897);
+  }
+
+  .btn-armes {
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    background: rgba(56, 66, 73, 0.897);
+  }
+
+  .fa-arrow-up-from-bracket {
+    font-size: 1.7em;
+  }
+}
+/* BOUTON FIN */

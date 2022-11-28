@@ -1,0 +1,172 @@
+/* BARRE DE NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(25, 30, 34);
+  font-family: "Tinos", sans-serif;
+  min-height: 8vh;
+}
+
+.logoNav {
+  width: 30px;
+  margin-left: 15px;
+}
+
+/* Donne la dimension et l'espace entre chaque catégorie de la barre de naviguation */
+.nav-links {
+  position: absolute;
+  right: 0px;
+  height: 41vh;
+  top: 8vh;
+  background-color: rgb(25, 30, 34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 55%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  z-index: 1;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Retire les points */
+.nav-links li {
+  list-style: none;
+  opacity: 0;
+}
+
+/* Retire la décoration des liens hypertexte */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+/* BARRE DE NAVIGATION FIN */
+
+/* BARRE DE NAVIGATION LORE */
+
+.navLore {
+  position: absolute;
+  top: 58px;
+  width: 100%;
+  max-height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(25, 30, 34);
+  border-top: 1px solid black;
+}
+
+.navLore li {
+  list-style: none;
+  margin-bottom: 7px;
+  font-size: 1.3em;
+  font-family: "Tinos", sans-serif;
+  margin-left: 10px;
+}
+
+.navLore a {
+  text-decoration: none;
+  color: white;
+}
+
+/* BARRE DE NAVIGATION LORE FIN */
+
+/* MEDIA QUERIES  600PX*/
+@media only screen and (min-width: 600px) {
+  .nav-links {
+    width: 30%;
+  }
+}
+
+/* MEDIA QUERIES  1024PX*/
+@media only screen and (min-width: 1024px) {
+  /* BARRE DE NAVIGUATION */
+  /*  nav {
+    min-height: 8vh;
+  } */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(25, 30, 34);
+    justify-content: space-around;
+    width: 60%;
+    transform: translateX(0%);
+    height: 0vh;
+    top: 4vh;
+  }
+
+  /* Retire les points */
+  .nav-links li {
+    opacity: 1;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  /* BARRE DE NAVIGUATION FIN */
+
+  /* BARRE DE NAVIGATION LORE FIN */
+  .navLore {
+    position: absolute;
+    position: fixed;
+    top: 73px;
+    left: 0px;
+    background: rgba(25, 30, 34, 0.884);
+    max-width: 15%;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navLore li {
+    font-size: 1.1em;
+  }
+
+  /* BARRE DE NAVIGATION LORE FIN */
+}

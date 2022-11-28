@@ -1,0 +1,103 @@
+body#video {
+  background: url(/images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+.tinos {
+  font-family: "Tinos", sans-serif;
+  font-weight: lighter;
+}
+
+.content {
+  min-height: 100%;
+  position: relative;
+}
+/* CARD VIDEO*/
+.container {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.card1 {
+  background-color: rgb(25, 30, 34);
+  padding-bottom: 1em;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  cursor: pointer;
+}
+
+.card1:hover {
+  box-shadow: 2px 2px 5px rgb(179, 168, 168);
+  border-radius: 5px;
+}
+
+.card2 {
+  padding: 10px;
+}
+
+.pCard {
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embedresize {
+  max-width: 100%;
+  margin: auto;
+}
+
+.embedresize div {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.embedresize iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+/* CARD VIDEO FIN */
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1024px) {
+  /* BACKGROUND IMAGE */
+
+  /* BACKGROUND IMAGE FIN */
+
+  /* CARD VIDEO */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+  }
+
+  .card1 {
+    max-width: 280px;
+    margin: 20px;
+  }
+
+  /* CARD VIDEO FIN */
+}

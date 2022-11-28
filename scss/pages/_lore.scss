@@ -1,0 +1,239 @@
+body#lore {
+  background: url(/images/Hunt-Wallpaper-3-1920x1080.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#assassin {
+  background: url(/images/vincent_assassin.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#boucher {
+  background: url(/images/boucher.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#araignee {
+  background: url(/images/spider.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#cleptobec {
+  background: url(/images/scrapbeak3.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#goule {
+  background: url(/images/goule.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#cuirasse {
+  background: url(images/cuirasse.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#ruche {
+  background: url(/images/ruche.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#immolateur {
+  background: url(/images/immolateur.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#meathead {
+  background: url(/images/meathead.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#cerbere {
+  background: url(/images/cerbere.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#demons {
+  background: url(/images/demons.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+/* CARD LORE */
+.container-title-lore {
+  margin-top: 130px;
+  margin-bottom: 10px;
+}
+.loreH1 {
+  font-family: "Smokum", sans-serif;
+}
+
+.loreH1araignee {
+  letter-spacing: 1px;
+  font-family: "Smokum", sans-serif;
+}
+
+.imageLore {
+  width: 200px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.flex-container p {
+  margin-bottom: 12px;
+}
+
+.flex-items {
+  margin-bottom: 10px;
+}
+
+.titleLore {
+  font-family: "Tinos", sans-serif;
+  margin-top: 10px;
+}
+
+.flex-items-description {
+  background-color: rgba(214, 215, 214, 0.897);
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.flex-items-description p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
+}
+
+.flex-items-description em {
+  color: black;
+  font-size: 0.8em;
+}
+
+.flex-items-description h3 {
+  font-family: "Smokum", sans-serif;
+  font-size: 2em;
+}
+
+.flex-items-description a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+  text-decoration: none;
+}
+
+.description {
+  background-color: rgba(214, 215, 214, 0.897);
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.description a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+  text-decoration: none;
+}
+
+.description em {
+  color: black;
+  font-size: 0.8em;
+}
+
+.description h3 {
+  font-family: "Smokum", sans-serif;
+  font-size: 2em;
+}
+
+.description p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 6px;
+}
+
+.description h5 {
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+/* CARD LORE FIN */
+
+/* BORDER LORE */
+
+.border {
+  border-bottom: 2px solid white;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.borderContainer {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.582);
+  width: 100%;
+  margin-top: 1px;
+}
+
+.pScrapbeak {
+  margin-bottom: 10px;
+}
+
+/* BORDER LORE */
+
+@media only screen and (min-width: 1024px) {
+  /* TITLE LORE */
+  .container-title-lore {
+    margin-top: 20px;
+  }
+  /* TITLE LORE FIN */
+
+  /* CARD LORE */
+
+  .flex-container {
+    flex-direction: row;
+    justify-content: center;
+    transform-origin: right;
+    animation-name: fade-lore;
+    animation-duration: 2s;
+  }
+
+  @keyframes fade-lore {
+    from {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  .titleLore {
+    margin-bottom: 20px;
+  }
+
+  .flex-items-description {
+    width: 50%;
+  }
+  .flex-items-description em {
+    font-size: 1rem;
+  }
+
+  .description {
+    width: 50%;
+  }
+  .description em {
+    font-size: 1rem;
+  }
+
+  /* CARD LORE FIN */
+}
