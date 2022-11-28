@@ -514,62 +514,62 @@ body#accueil {
 }
 
 body#lore {
-  background: url(/images/Hunt-Wallpaper-3-1920x1080.jpg) fixed no-repeat center;
+  background: url(../images/Hunt-Wallpaper-3-1920x1080.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#assassin {
-  background: url(/images/vincent_assassin.jpg) fixed no-repeat center;
+  background: url(../images/vincent_assassin.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#boucher {
-  background: url(/images/boucher.jpg) fixed no-repeat center;
+  background: url(../images/boucher.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#araignee {
-  background: url(/images/spider.jpg) fixed no-repeat center;
+  background: url(../images/spider.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#cleptobec {
-  background: url(/images/scrapbeak3.jpg) fixed no-repeat center;
+  background: url(../images/scrapbeak3.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#goule {
-  background: url(/images/goule.jpg) fixed no-repeat center;
+  background: url(../images/goule.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#cuirasse {
-  background: url(images/cuirasse.jpg) fixed no-repeat center;
+  background: url(../images/cuirasse.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#ruche {
-  background: url(/images/ruche.jpg) fixed no-repeat center;
+  background: url(../images/ruche.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#immolateur {
-  background: url(/images/immolateur.jpg) fixed no-repeat center;
+  background: url(../images/immolateur.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#meathead {
-  background: url(/images/meathead.jpg) fixed no-repeat center;
+  background: url(../images/meathead.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#cerbere {
-  background: url(/images/cerbere.jpg) fixed no-repeat center;
+  background: url(../images/cerbere.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
 body#demons {
-  background: url(/images/demons.jpg) fixed no-repeat center;
+  background: url(../images/demons.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
@@ -781,7 +781,7 @@ body#stalker-bettle {
 
 /* PAGE DES NEWS */
 .news-article-background {
-  background: url(/images/stalkerbeetle.png) repeat scroll center center/cover;
+  background: url(../images/stalkerbeetle.png) repeat scroll center center/cover;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -790,7 +790,7 @@ body#stalker-bettle {
 }
 
 .news-article-background-mama {
-  background: url(/images/mama_maye.jpg) repeat scroll center center/cover;
+  background: url(../images/mama_maye.jpg) repeat scroll center center/cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 90vh;
@@ -922,7 +922,7 @@ body#stalker-bettle {
 }
 
 body#armes {
-  background: url(/images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
+  background: url(../images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
@@ -1056,7 +1056,7 @@ caption {
 }
 
 body#patchnotes {
-  background: url(/images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
+  background: url(../images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
@@ -1242,7 +1242,7 @@ em {
 }
 
 body#video {
-  background: url(/images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
+  background: url(../images/Hunt-Wallpaper-4-2560x1440.jpg) fixed no-repeat center;
   background-size: cover;
 }
 
