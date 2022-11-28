@@ -123,4 +123,79 @@ caption {
     height: 0px;
   }
   /* TABLEAU FIN */
+
+  /* ANIMATION TABLEAU */
+  caption {
+    animation-name: fade-table-caption;
+    animation-duration: 2s;
+  }
+  thead {
+    animation-name: fade-table-tr;
+    animation-duration: 2s;
+  }
+  .table-armes {
+    animation-name: fade-table-armes;
+    animation-duration: 2s;
+  }
+  .table-style {
+    animation-name: fade-table-style;
+    animation-duration: 2s;
+  }
+  .table-style-underline {
+    animation-name: fade-table-underline;
+    animation-duration: 2s;
+  }
+
+  @keyframes fade-table-caption {
+    from {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-table-tr {
+    from {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-table-armes {
+    from {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-table-style {
+    from {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-table-underline {
+    from {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* ANIMATION TABLEAU */
 }
