@@ -789,6 +789,15 @@ caption {
 .news-article-container p {
   margin-top: 30px;
 }
+.container-mama-maye {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image-mama-maye {
+  margin-top: 30px;
+  width: 100%;
+}
 /* PAGE DES NEWS FIN */
 
 /* FOOTER */
