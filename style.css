@@ -312,19 +312,8 @@ h2 {
   width: 90%;
   background-color: rgb(25, 30, 34);
   position: relative;
-  animation-name: fade-card-index;
-  animation-duration: 3s;
 }
-@keyframes fade-card-index {
-  from {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
+
 .image-index {
   width: 100%;
   transition: all 500ms ease;
@@ -943,7 +932,20 @@ caption {
 
   /* PAGE INDEX */
   .card-index {
+    animation-name: fade-card-index;
+    animation-duration: 3s;
     width: 23%;
+  }
+
+  @keyframes fade-card-index {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
   }
 
   /* PAGE INDEX FIN */
