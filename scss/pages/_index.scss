@@ -42,7 +42,6 @@ body#accueil {
 }
 .card-index-description {
   padding: 10px;
-  height: 48%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -54,6 +53,7 @@ body#accueil {
   position: absolute;
   bottom: 6px;
   right: 6px;
+  font-weight: bold;
 }
 .card-index-description h4 {
   color: white;
@@ -87,7 +87,6 @@ body#accueil {
     animation-name: fade-card-index;
     animation-duration: 3s;
     width: 20%;
-    height: 48vh;
   }
 
   @keyframes fade-card-index {

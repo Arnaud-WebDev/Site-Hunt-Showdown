@@ -452,7 +452,6 @@ body#accueil {
 
 .card-index-description {
   padding: 10px;
-  height: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,6 +470,7 @@ body#accueil {
   position: absolute;
   bottom: 6px;
   right: 6px;
+  font-weight: bold;
 }
 
 .card-index-description h4 {
@@ -514,7 +514,6 @@ body#accueil {
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
     width: 20%;
-    height: 48vh;
   }
   @-webkit-keyframes fade-card-index {
     from {
@@ -993,11 +992,6 @@ body#armes p {
   height: 100px;
 }
 
-.invisible-margin-video {
-  width: 100%;
-  height: 10px;
-}
-
 .table-scroll {
   height: 100%;
   width: 100%;
@@ -1092,9 +1086,6 @@ caption {
   .tableau-style {
     margin-left: 100px;
     margin-right: 100px;
-  }
-  .invisible-margin-video {
-    height: 0px;
   }
   /* TABLEAU FIN */
   /* ANIMATION TABLEAU */
@@ -1455,25 +1446,47 @@ body#video {
 
 /* CARD VIDEO*/
 .container {
-  padding: 30px;
-  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .card1 {
+  margin: 20px;
+  width: 90%;
   background-color: #191e22;
-  padding-bottom: 1em;
-  display: block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.card1 a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #63191c;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  font-weight: bold;
 }
 
 .card1:hover {
-  -webkit-box-shadow: 2px 2px 5px #b3a8a8;
-          box-shadow: 2px 2px 5px #b3a8a8;
-  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 50px black;
+          box-shadow: 0px 0px 50px black;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .card2 {
@@ -1483,6 +1496,7 @@ body#video {
 .pCard {
   color: white;
   padding: 0.5em;
+  margin-bottom: 25px;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -1511,26 +1525,30 @@ iframe {
 }
 
 /* CARD VIDEO FIN */
+.invisible-margin-video {
+  width: 100%;
+  height: 100px;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1024px) {
-  /* BACKGROUND IMAGE */
-  /* BACKGROUND IMAGE FIN */
   /* CARD VIDEO */
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
   }
   .card1 {
-    max-width: 280px;
-    margin: 20px;
+    max-width: 22%;
   }
   .card2 {
     display: -webkit-box;
