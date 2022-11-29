@@ -45,13 +45,6 @@ body#video {
   font-family: "Roboto", sans-serif;
 }
 
-.logo {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .embedresize {
   max-width: 100%;
   margin: auto;
@@ -97,6 +90,11 @@ iframe {
   .card1 {
     max-width: 280px;
     margin: 20px;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   /* CARD VIDEO FIN */

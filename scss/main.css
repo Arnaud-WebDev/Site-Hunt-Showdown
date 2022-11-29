@@ -152,6 +152,13 @@ h2 {
   /* FOOTER FIN */
 }
 
+.logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 1024px) {
   /* LOGO */
   .logo {
@@ -445,6 +452,16 @@ body#accueil {
 
 .card-index-description {
   padding: 10px;
+  height: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .card-index-description a {
@@ -454,6 +471,11 @@ body#accueil {
   position: absolute;
   bottom: 6px;
   right: 6px;
+}
+
+.card-index-description h4 {
+  color: white;
+  font-size: 0.7rem;
 }
 
 /* PAGE INDEX FIN */
@@ -476,6 +498,12 @@ body#accueil {
   .card-index {
     max-width: 33%;
   }
+  .container-index h3 {
+    font-size: 0.9rem;
+  }
+  .container-index p {
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -485,7 +513,8 @@ body#accueil {
             animation-name: fade-card-index;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
-    width: 23%;
+    width: 20%;
+    height: 48vh;
   }
   @-webkit-keyframes fade-card-index {
     from {
@@ -512,6 +541,17 @@ body#accueil {
     }
   }
   /* PAGE INDEX FIN */
+  /* TITLE CARD INDEX  */
+  .card-index-description h4 {
+    font-size: 0.9rem;
+  }
+  .container-index h3 {
+    font-size: 1rem;
+  }
+  .container-index p {
+    font-size: 1rem;
+  }
+  /* TITLE CARD INDEX FIN */
 }
 
 body#lore {
@@ -1447,13 +1487,6 @@ body#video {
   font-family: "Roboto", sans-serif;
 }
 
-.logo {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .embedresize {
   max-width: 100%;
   margin: auto;
@@ -1498,6 +1531,17 @@ iframe {
   .card1 {
     max-width: 280px;
     margin: 20px;
+  }
+  .card2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   /* CARD VIDEO FIN */
 }
