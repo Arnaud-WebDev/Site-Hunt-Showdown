@@ -106,6 +106,41 @@ iframe {
     flex-direction: column;
     justify-content: space-around;
   }
-
   /* CARD VIDEO FIN */
+
+  /* ANIMATION  */
+
+  /* nth-child(2n+1) lignes impaires */
+  .card1:nth-child(2n + 1) {
+    animation-name: card-video-impaire;
+    animation-duration: 2s;
+  }
+  @keyframes card-video-impaire {
+    from {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* nth-child(2n) Lignes paires */
+  .card1:nth-child(2n) {
+    animation-name: card-video-paire;
+    animation-duration: 2s;
+  }
+  @keyframes card-video-paire {
+    from {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* ANIMATION FIN */
 }

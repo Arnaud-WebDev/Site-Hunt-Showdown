@@ -61,6 +61,7 @@
     width: 70px;
     height: 70px;
     right: 20px;
+    bottom: 95px;
     background: rgba(56, 66, 73, 0.897);
   }
   .fa-arrow-up-from-bracket {
@@ -1562,5 +1563,69 @@ iframe {
         justify-content: space-around;
   }
   /* CARD VIDEO FIN */
+  /* ANIMATION  */
+  /* nth-child(2n+1) lignes impaires */
+  .card1:nth-child(2n + 1) {
+    -webkit-animation-name: card-video-impaire;
+            animation-name: card-video-impaire;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes card-video-impaire {
+    from {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes card-video-impaire {
+    from {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* nth-child(2n) Lignes paires */
+  .card1:nth-child(2n) {
+    -webkit-animation-name: card-video-paire;
+            animation-name: card-video-paire;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes card-video-paire {
+    from {
+      -webkit-transform: translateY(300px);
+              transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes card-video-paire {
+    from {
+      -webkit-transform: translateY(300px);
+              transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* ANIMATION FIN */
 }
 /*# sourceMappingURL=main.css.map */
