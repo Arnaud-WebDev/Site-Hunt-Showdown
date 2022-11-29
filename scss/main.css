@@ -1304,6 +1304,7 @@ em {
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .patchnotes-container h2 {
