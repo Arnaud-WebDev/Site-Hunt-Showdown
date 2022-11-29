@@ -614,6 +614,10 @@ body#demons {
   background-size: cover;
 }
 
+.break-word-lore {
+  word-break: break-word;
+}
+
 /* CARD LORE */
 .container-title-lore {
   margin-top: 130px;
