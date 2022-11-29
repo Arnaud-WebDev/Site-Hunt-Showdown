@@ -1483,7 +1483,7 @@ body#video {
   color: #63191c;
   position: absolute;
   bottom: 10px;
-  right: 6px;
+  right: 10px;
   font-weight: bold;
 }
 
@@ -1554,7 +1554,7 @@ iframe {
         flex-wrap: wrap;
   }
   .card1 {
-    max-width: 22%;
+    max-width: 19%;
   }
   .card2 {
     display: -webkit-box;
