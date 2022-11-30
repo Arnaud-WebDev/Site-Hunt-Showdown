@@ -27,6 +27,7 @@ navSlide()
 // BOUTON POUR REMONTER EN HAUT
 
 const btn = document.querySelector(".btn, .btn-armes")
+const btnBack = document.querySelector(".btn-back")
 
 btn.addEventListener("click", () => {
   window.scrollTo({
@@ -37,3 +38,14 @@ btn.addEventListener("click", () => {
 })
 
 // BOUTON POUR REMONTER EN HAUT FIN
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    btn.style.display = "flex"
+  } else {
+    btn.style.display = "none"
+  }
+})
+window.addEventListener("load", () => {
+  btn.style.display = "none"
+})
