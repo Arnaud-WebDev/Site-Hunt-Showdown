@@ -196,6 +196,7 @@ h2 {
 
 .logo {
   width: 50%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -227,6 +228,7 @@ nav {
 
 .logoNav {
   width: 30px;
+  height: auto;
   margin-left: 15px;
 }
 
