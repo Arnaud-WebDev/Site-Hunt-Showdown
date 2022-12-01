@@ -1685,6 +1685,7 @@ iframe {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    overflow: hidden;
   }
   .card1 {
     max-width: 19%;
