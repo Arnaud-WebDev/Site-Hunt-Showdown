@@ -87,8 +87,68 @@ iframe {
   height: 100px;
 }
 
-/* MEDIA QUERIES */
+/* BLOC VIDEO  */
 
+.bloc {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bloc video {
+  display: block;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+}
+
+.bloc h1 {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: red;
+  transform: skew(-30deg);
+}
+
+.btn-video {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  right: 50%;
+  animation-name: rebond;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.fa-angle-double-down {
+  color: white;
+  font-size: 2rem;
+}
+@keyframes rebond {
+  from {
+    bottom: 17%;
+  }
+  to {
+    bottom: 15%;
+  }
+}
+/* BLOC VIDEO FIN */
+
+/* MEDIA QUERIES */
 @media only screen and (min-width: 1024px) {
   /* CARD VIDEO */
   .container {
@@ -144,4 +204,18 @@ iframe {
   }
 
   /* ANIMATION FIN */
+
+  * {
+    margin: 0;
+  }
+
+  /* BLOC VIDEO */
+
+  .bloc h1 {
+    font-size: 2rem;
+  }
+  .fa-angle-double-down {
+    font-size: 4rem;
+  }
+  /* BLOC VIDEO FIN */
 }
