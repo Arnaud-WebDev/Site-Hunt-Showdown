@@ -1637,8 +1637,8 @@ iframe {
   right: 50%;
   -webkit-animation-name: rebond;
           animation-name: rebond;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
