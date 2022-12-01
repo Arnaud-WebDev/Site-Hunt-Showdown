@@ -1652,7 +1652,7 @@ iframe {
 
 @-webkit-keyframes rebond {
   from {
-    bottom: 17%;
+    bottom: 16%;
   }
   to {
     bottom: 15%;
@@ -1661,7 +1661,7 @@ iframe {
 
 @keyframes rebond {
   from {
-    bottom: 17%;
+    bottom: 16%;
   }
   to {
     bottom: 15%;
