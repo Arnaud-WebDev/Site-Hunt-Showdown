@@ -208,11 +208,13 @@ h2 {
   margin-left: 15px;
 }
 
+.logo-video {
+  height: 100%;
+  width: 100%;
+}
+
 @media only screen and (min-width: 1024px) {
   /* LOGO */
-  .logo {
-    width: 30%;
-  }
   /* LOGO FIN */
 }
 
@@ -342,7 +344,7 @@ nav {
   position: absolute;
   top: 58px;
   width: 100%;
-  max-height: 130px;
+  max-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1611,18 +1613,37 @@ iframe {
   z-index: -100;
 }
 
-.bloc h1 {
+.video-h1 {
   position: absolute;
-  bottom: 25%;
-  left: 25%;
-  right: 25%;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 1.2rem;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   padding: 5px;
-  background-color: #63191c;
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.video-h1 h1 {
   -webkit-transform: skew(-30deg);
           transform: skew(-30deg);
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.1rem;
+  background-color: #63191c;
+  padding: 10px;
 }
 
 .btn-video {
@@ -1675,6 +1696,12 @@ iframe {
 
 /* BLOC VIDEO FIN */
 /* MEDIA QUERIES */
+@media only screen and (min-width: 530px) {
+  .video-h1 {
+    bottom: 12%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   /* CARD VIDEO */
   .container {
@@ -1775,8 +1802,11 @@ iframe {
     margin: 0;
   }
   /* BLOC VIDEO */
-  .bloc h1 {
-    font-size: 2rem;
+  .video-h1 {
+    bottom: 20%;
+  }
+  .video-h1 h1 {
+    font-size: 1.6rem;
   }
   .fa-angle-double-down {
     font-size: 4rem;
