@@ -1,3 +1,6 @@
+@media only screen and (min-width: 1024px) {
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -102,5 +105,93 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* lightbox CHASSEUR */
+  .lightbox-chasseur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(38, 41, 44);
+    z-index: 10;
+    overflow: auto;
+    animation: lightboxIn 0.5s;
+    transition: opacity 0.3s;
+  }
+  .lightbox-chasseur.fadeOut {
+    opacity: 0;
+  }
+  .lightbox-chasseur__next,
+  .lightbox-chasseur__prev {
+    border: none;
+    background: url(./images/svg/arrow.svg) center center / 16px 28px no-repeat;
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    margin-top: -14px;
+    z-index: 11;
+  }
+
+  .lightbox-chasseur__prev {
+    right: auto;
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .lightbox-chasseur__close {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: url(./images/svg/cross.svg) center center / 100% 100% no-repeat;
+    position: fixed;
+    text-indent: -3000px;
+    top: 20px;
+    right: 20px;
+    z-index: 12;
+  }
+
+  .lightbox-chasseur button {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    text-indent: -3000px;
+  }
+
+  .lightbox-chasseur button:hover {
+    opacity: 1;
+  }
+  .lightbox-chasseur__container img {
+    max-width: 100%;
+    height: auto;
+    animation: lightbox-chasseur 0.5s;
+  }
+  .lightbox-chasseur__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    min-height: 100vh;
+  }
+  .lightbox-chasseur__loader {
+    width: 38px;
+    height: 38px;
+    opacity: 0.5;
+    background: url(./images/svg/loader.svg) center center no-repeat;
+  }
+
+  @keyframes lightbox-chasseur {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

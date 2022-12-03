@@ -1813,4 +1813,108 @@ iframe {
   }
   /* BLOC VIDEO FIN */
 }
+
+#chasseur {
+  background-color: #121f25;
+}
+
+.chasseurs-h1 {
+  font-family: "Rye", sans-serif;
+}
+
+.container-global-chasseur {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*   border: 2px solid black; */
+}
+
+.container-chasseurs {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  border: 2px solid black; */
+}
+
+.card-chasseur {
+  max-width: 100%;
+  height: 500px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.card-chasseur:hover {
+  -webkit-box-shadow: 10px 10px 50px #111e23;
+          box-shadow: 10px 10px 50px #111e23;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.card-chasseur p {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.card-chasseur:hover p {
+  opacity: 1;
+}
+
+.card-chasseur span {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 1.1rem;
+  color: #898a70;
+  font-weight: bold;
+}
+
+.card-chasseur img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .container-chasseurs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  .card-chasseur {
+    margin: 20px;
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
