@@ -1876,6 +1876,8 @@ iframe {
   padding: 10px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  font-family: "Tinos", sans-serif;
+  background-color: rgba(17, 30, 35, 0.623);
 }
 
 .card-chasseur:hover p {
