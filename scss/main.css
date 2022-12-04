@@ -1868,10 +1868,10 @@ iframe {
 
 .card-chasseur p {
   position: absolute;
-  top: 50px;
-  text-align: start;
-  color: #beafaf;
-  font-size: 1.1rem;
+  top: 15px;
+  text-align: center;
+  color: #cfc8c8;
+  font-size: 0.9rem;
   opacity: 0;
   padding: 10px;
   -webkit-transition: all 1s ease-in-out;
@@ -1916,6 +1916,9 @@ iframe {
   .card-chasseur {
     margin: 20px;
     padding: 0;
+  }
+  .card-chasseur p {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
