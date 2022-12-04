@@ -1,3 +1,5 @@
+/* lightbox CHASSEUR */
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -20,23 +22,24 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.lightbox {
+.lightbox-chasseur {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(38, 41, 44);
   z-index: 10;
   overflow: auto;
   animation: lightboxIn 0.5s;
   transition: opacity 0.3s;
 }
-.lightbox.fadeOut {
+.lightbox-chasseur.fadeOut {
   opacity: 0;
 }
-.lightbox__next,
-.lightbox__prev {
+.lightbox-chasseur__next,
+.lightbox-chasseur__prev {
   border: none;
   background: url(./images/svg/arrow.svg) center center / 16px 28px no-repeat;
   width: 50px;
@@ -48,13 +51,13 @@
   z-index: 11;
 }
 
-.lightbox__prev {
+.lightbox-chasseur__prev {
   right: auto;
   left: 0;
   transform: rotate(180deg);
 }
 
-.lightbox__close {
+.lightbox-chasseur__close {
   border: none;
   width: 30px;
   height: 30px;
@@ -66,22 +69,22 @@
   z-index: 12;
 }
 
-.lightbox button {
+.lightbox-chasseur button {
   opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.3s;
   text-indent: -3000px;
 }
 
-.lightbox button:hover {
+.lightbox-chasseur button:hover {
   opacity: 1;
 }
-.lightbox__container img {
+.lightbox-chasseur__container img {
   max-width: 100%;
   height: auto;
-  animation: lightboxIn 0.5s;
+  animation: lightbox-chasseur 0.5s;
 }
-.lightbox__container {
+.lightbox-chasseur__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,14 +92,14 @@
   margin-left: 50px;
   min-height: 100vh;
 }
-.lightbox__loader {
+.lightbox-chasseur__loader {
   width: 38px;
   height: 38px;
   opacity: 0.5;
   background: url(./images/svg/loader.svg) center center no-repeat;
 }
 
-@keyframes lightboxIn {
+@keyframes lightbox-chasseur {
   from {
     opacity: 0;
   }
