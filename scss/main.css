@@ -1933,6 +1933,7 @@ iframe {
   text-decoration: none;
   color: #a9b095;
   font-weight: bold;
+  font-family: "Tinos", sans-serif;
 }
 
 .fa-steam-square {
@@ -1965,6 +1966,7 @@ iframe {
   }
   .card-chasseur a {
     bottom: 0;
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
