@@ -1834,6 +1834,12 @@ iframe {
   margin: 20px;
 }
 
+.chasseur-a {
+  text-decoration: none;
+  color: #cfc8c8;
+  font-style: italic;
+}
+
 .container-global-chasseur {
   width: 100%;
   display: -webkit-box;
