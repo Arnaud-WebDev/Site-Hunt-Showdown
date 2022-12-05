@@ -1818,8 +1818,18 @@ iframe {
   background-color: #121f25;
 }
 
+.explain-chasseur {
+  color: #cfc8c8;
+  text-align: center;
+  margin: 20px;
+}
+
 .chasseurs-h1 {
   font-family: "Rye", sans-serif;
+}
+
+.chasseurs-h2 {
+  margin: 20px;
 }
 
 .container-global-chasseur {
