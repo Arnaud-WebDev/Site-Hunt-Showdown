@@ -1934,6 +1934,7 @@ iframe {
   color: #a9b095;
   font-weight: bold;
   font-family: "Noto Serif", sans-serif;
+  text-shadow: 3px 3px 0px black;
 }
 
 .fa-steam-square {
