@@ -40,11 +40,14 @@ btn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 500) {
-    btn.style.display = "flex"
+    btn.style.transition = "all 0.5s ease-in-out"
+    btn.style.opacity = 1
+    btn.style.visibility = "visible"
   } else {
-    btn.style.display = "none"
+    btn.style.opacity = 0
+    btn.style.visibility = "hidden"
   }
 })
 window.addEventListener("load", () => {
-  btn.style.display = "none"
+  btn.style.opacity = 0
 })

@@ -20,6 +20,8 @@
   bottom: 90px;
   cursor: pointer;
   z-index: 1;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .btn-armes {
@@ -1870,7 +1872,7 @@ iframe {
 .card-chasseur {
   max-width: 100%;
   height: 500px;
-  cursor: pointer;
+  cursor: url("../images/icons8-steganographie-35.png"), auto;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   padding-bottom: 20px;
@@ -1902,22 +1904,39 @@ iframe {
   opacity: 1;
 }
 
-.card-chasseur span {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  bottom: 5px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  font-size: 1.1rem;
-  color: #898a70;
-  font-weight: bold;
-}
-
 .card-chasseur img {
   width: 100%;
   height: 100%;
+}
+
+.card-chasseur a {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 30px;
+  bottom: 20px;
+  left: 26%;
+  -webkit-transform: translate(-25%);
+          transform: translate(-25%);
+  background-color: #121f25;
+  text-decoration: none;
+  color: #a9b095;
+  font-weight: bold;
+}
+
+.fa-steam-square {
+  color: white;
+  position: absolute;
+  left: 0px;
+  font-size: 1.6rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -1939,6 +1958,9 @@ iframe {
   }
   .card-chasseur p {
     font-size: 1.1rem;
+  }
+  .card-chasseur a {
+    bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
