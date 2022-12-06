@@ -29,10 +29,7 @@
   font-family: "Rye", sans-serif;
   margin-top: 20px;
 }
-/* .chasseurs-h2 {
-  color: rgb(207, 200, 200);
-  margin: 20px;
-} */
+
 .chasseur-a {
   text-decoration: none;
   color: rgb(207, 200, 200);
@@ -68,12 +65,12 @@
 
 .card-chasseur p {
   position: absolute;
-  top: 15px;
+  top: 0px;
   text-align: center;
   color: rgb(207, 200, 200);
   font-size: 0.9rem;
   opacity: 0;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   transition: all 1s ease-in-out;
   font-family: "Tinos", sans-serif;
   background-color: rgba(17, 30, 35, 0.623);
@@ -102,6 +99,22 @@
   font-weight: bold;
   font-family: "Noto Serif", sans-serif;
   text-shadow: 3px 3px 0px black;
+}
+.card-chasseur span {
+  background-color: rgb(18, 31, 37);
+  font-family: "Noto Serif", sans-serif;
+  text-shadow: 3px 3px 0px black;
+  color: rgb(169, 176, 149);
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 25%;
+  transform: translate(-25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
 }
 .fa-steam-square {
   color: white;

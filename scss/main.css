@@ -1866,10 +1866,6 @@ iframe {
   margin-top: 20px;
 }
 
-/* .chasseurs-h2 {
-  color: rgb(207, 200, 200);
-  margin: 20px;
-} */
 .chasseur-a {
   text-decoration: none;
   color: #cfc8c8;
@@ -1922,12 +1918,12 @@ iframe {
 
 .card-chasseur p {
   position: absolute;
-  top: 15px;
+  top: 0px;
   text-align: center;
   color: #cfc8c8;
   font-size: 0.9rem;
   opacity: 0;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   font-family: "Tinos", sans-serif;
@@ -1966,6 +1962,30 @@ iframe {
   font-weight: bold;
   font-family: "Noto Serif", sans-serif;
   text-shadow: 3px 3px 0px black;
+}
+
+.card-chasseur span {
+  background-color: #121f25;
+  font-family: "Noto Serif", sans-serif;
+  text-shadow: 3px 3px 0px black;
+  color: #a9b095;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 25%;
+  -webkit-transform: translate(-25%);
+          transform: translate(-25%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
 }
 
 .fa-steam-square {
