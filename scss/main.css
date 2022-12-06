@@ -1965,7 +1965,7 @@ iframe {
 }
 
 .card-chasseur span {
-  background-color: #121f25;
+  background-color: rgba(18, 31, 37, 0);
   font-family: "Noto Serif", sans-serif;
   text-shadow: 3px 3px 0px black;
   color: #a9b095;
