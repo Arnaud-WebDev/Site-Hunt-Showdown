@@ -1827,11 +1827,38 @@ iframe {
 .explain-chasseur {
   color: #cfc8c8;
   text-align: center;
-  margin: 0px;
   padding: 20px;
   font-family: "Roboto", sans-serif;
-  /*  background-color: rgb(18, 31, 37); */
   margin-top: 20px;
+}
+
+.container-explain-carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.text-explain-carte {
+  width: 80%;
+}
+
+.container-image-explain-carte {
+  margin: 50px;
+  max-width: 80%;
+}
+
+.image-explain-carte {
+  width: 100%;
 }
 
 .chasseurs-h1 {
@@ -1840,11 +1867,10 @@ iframe {
   margin-top: 20px;
 }
 
-.chasseurs-h2 {
-  color: #cfc8c8;
+/* .chasseurs-h2 {
+  color: rgb(207, 200, 200);
   margin: 20px;
-}
-
+} */
 .chasseur-a {
   text-decoration: none;
   color: #cfc8c8;
@@ -1977,6 +2003,24 @@ iframe {
   }
   .explain-chasseur {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-explain-carte {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text-explain-carte {
+    width: 40%;
+  }
+  .explain-chasseur {
+    margin-left: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
