@@ -185,6 +185,9 @@ h2 {
 /* FOOTER FIN */
 @media only screen and (min-width: 1024px) {
   /* FOOTER */
+  .footer {
+    height: 80px;
+  }
   .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;

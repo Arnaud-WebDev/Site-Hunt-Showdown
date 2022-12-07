@@ -29,7 +29,9 @@
 
 @media only screen and (min-width: 1024px) {
   /* FOOTER */
-
+  .footer {
+    height: 80px;
+  }
   .footer ul {
     display: flex;
     flex-direction: row;
