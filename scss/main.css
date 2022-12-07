@@ -891,7 +891,7 @@ body#stalker-bettle {
 
 /* PAGE DES NEWS */
 .news-article-background {
-  background: url(../images/stalkerbeetle.png) repeat scroll center center/cover;
+  background: url(../images/stalkerbeetle.webp) repeat scroll center center/cover;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -900,7 +900,7 @@ body#stalker-bettle {
 }
 
 .news-article-background-mama {
-  background: url(../images/mama_maye.jpg) repeat scroll center center/cover;
+  background: url(../images/mama_maye.webp) repeat scroll center center/cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 90vh;
