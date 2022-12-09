@@ -640,6 +640,11 @@ body#demons {
   background-size: cover;
 }
 
+.invisible-margin-lore {
+  width: 100%;
+  height: 1px;
+}
+
 .break-word-lore {
   word-break: break-word;
 }
@@ -790,6 +795,9 @@ body#demons {
 
 /* BORDER LORE */
 @media only screen and (min-width: 1024px) {
+  .invisible-margin-lore {
+    height: 0px;
+  }
   /* TITLE LORE */
   .container-title-lore {
     margin-top: 20px;
