@@ -1,81 +1,61 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&family=Smokum&family=Tinos&display=swap");
 /* BOUTTON */
-.btn {
-  height: 30px;
-  width: 30px;
-  background: #384249;
+.btn-armes {
+  background: url(../images/svg/angle-double-up-solid.svg) center center/60% 60% no-repeat;
+  background-color: rgba(56, 66, 73, 0.897);
+  border: none;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  cursor: pointer;
+  right: 20px;
+  bottom: 90px;
+  z-index: 1;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  background: url(../images/svg/angle-double-up-solid.svg) center center/60% 60% no-repeat;
+  background-color: rgba(56, 66, 73, 0.897);
+  border-radius: 50%;
+  border: none;
   position: fixed;
   right: 20px;
   bottom: 90px;
   cursor: pointer;
   z-index: 1;
-  -webkit-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
 }
 
+/* 
 .btn-armes {
   height: 30px;
   width: 30px;
-  background: #384249;
+  background: rgb(56, 66, 73);
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   right: 20px;
   bottom: 90px;
   cursor: pointer;
   z-index: 1;
-}
-
-.fa-angle-double-up {
-  color: white;
-}
-
-.fa-arrow-up-from-bracket {
-  color: white;
-}
-
+} */
 .btn-back {
-  height: 30px;
-  width: 30px;
-  background: #384249;
+  height: 40px;
+  width: 40px;
+  background: url(../images/svg/angle-double-left-solid.svg) center center/60% 60% no-repeat;
+  background-color: #384249;
+  border: none;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: fixed;
   cursor: pointer;
   top: 70px;
   left: 20px;
   z-index: 1;
-}
-
-.fa-angle-double-left {
-  color: white;
 }
 
 /* BOUTTON FIN */
@@ -86,29 +66,20 @@
     height: 70px;
     right: 100px;
     bottom: 95px;
-    background: rgba(56, 66, 73, 0.897);
+    background-color: rgba(56, 66, 73, 0.897);
   }
   .btn-armes {
     width: 70px;
     height: 70px;
     right: 20px;
     bottom: 95px;
-    background: rgba(56, 66, 73, 0.897);
-  }
-  .fa-angle-double-up {
-    font-size: 1.7em;
-  }
-  .fa-arrow-up-from-bracket {
-    font-size: 1.7em;
+    background-color: rgba(56, 66, 73, 0.897);
   }
   .btn-back {
     width: 70px;
     height: 70px;
     top: 95px;
     left: 50px;
-  }
-  .fa-angle-double-left {
-    font-size: 1.9em;
   }
 }
 
@@ -1623,7 +1594,7 @@ iframe {
 .video-h1 {
   position: absolute;
   bottom: 10%;
-  left: 50%;
+  left: 52%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 5px;
@@ -1654,16 +1625,9 @@ iframe {
 }
 
 .btn-video {
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: url(../images/svg/angle-double-down-solid.svg) center center/60% 60% no-repeat;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 15%;
   left: 50%;
@@ -1676,11 +1640,6 @@ iframe {
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-}
-
-.fa-angle-double-down {
-  color: white;
-  font-size: 2rem;
 }
 
 @-webkit-keyframes rebond {
@@ -1815,8 +1774,9 @@ iframe {
   .video-h1 h1 {
     font-size: 1.6rem;
   }
-  .fa-angle-double-down {
-    font-size: 4rem;
+  .btn-video {
+    width: 80px;
+    height: 80px;
   }
   /* BLOC VIDEO FIN */
 }

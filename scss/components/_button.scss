@@ -1,21 +1,32 @@
 /* BOUTTON */
+.btn-armes {
+  background: url(../images/svg/angle-double-up-solid.svg) center center / 60% 60% no-repeat;
+  background-color: rgba(56, 66, 73, 0.897);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  cursor: pointer;
+  right: 20px;
+  bottom: 90px;
+  z-index: 1;
+}
 
 .btn {
-  height: 30px;
-  width: 30px;
-  background: rgb(56, 66, 73);
+  height: 40px;
+  width: 40px;
+  background: url(../images/svg/angle-double-up-solid.svg) center center / 60% 60% no-repeat;
+  background-color: rgba(56, 66, 73, 0.897);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: none;
   position: fixed;
   right: 20px;
   bottom: 90px;
   cursor: pointer;
   z-index: 1;
-  transition: all 3s ease-in-out;
 }
-
+/* 
 .btn-armes {
   height: 30px;
   width: 30px;
@@ -29,23 +40,15 @@
   bottom: 90px;
   cursor: pointer;
   z-index: 1;
-}
-
-.fa-angle-double-up {
-  color: white;
-}
-.fa-arrow-up-from-bracket {
-  color: white;
-}
+} */
 
 .btn-back {
-  height: 30px;
-  width: 30px;
-  background: rgb(56, 66, 73);
+  height: 40px;
+  width: 40px;
+  background: url(../images/svg/angle-double-left-solid.svg) center center / 60% 60% no-repeat;
+  background-color: rgb(56, 66, 73);
+  border: none;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   cursor: pointer;
   top: 70px;
@@ -53,9 +56,6 @@
   z-index: 1;
 }
 
-.fa-angle-double-left {
-  color: white;
-}
 /* BOUTTON FIN */
 
 @media only screen and (min-width: 1024px) {
@@ -66,7 +66,7 @@
     height: 70px;
     right: 100px;
     bottom: 95px;
-    background: rgba(56, 66, 73, 0.897);
+    background-color: rgba(56, 66, 73, 0.897);
   }
 
   .btn-armes {
@@ -74,14 +74,7 @@
     height: 70px;
     right: 20px;
     bottom: 95px;
-    background: rgba(56, 66, 73, 0.897);
-  }
-
-  .fa-angle-double-up {
-    font-size: 1.7em;
-  }
-  .fa-arrow-up-from-bracket {
-    font-size: 1.7em;
+    background-color: rgba(56, 66, 73, 0.897);
   }
 
   .btn-back {
@@ -89,9 +82,6 @@
     height: 70px;
     top: 95px;
     left: 50px;
-  }
-  .fa-angle-double-left {
-    font-size: 1.9em;
   }
 }
 /* BOUTON FIN */

@@ -110,7 +110,7 @@ iframe {
 .video-h1 {
   position: absolute;
   bottom: 10%;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   padding: 5px;
   width: 100%;
@@ -131,10 +131,9 @@ iframe {
 }
 
 .btn-video {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url(../images/svg/angle-double-down-solid.svg) center center / 60% 60% no-repeat;
+  width: 50px;
+  height: 50px;
   position: absolute;
   bottom: 15%;
   left: 50%;
@@ -144,10 +143,7 @@ iframe {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.fa-angle-double-down {
-  color: white;
-  font-size: 2rem;
-}
+
 @keyframes rebond {
   from {
     bottom: 16%;
@@ -232,8 +228,9 @@ iframe {
   .video-h1 h1 {
     font-size: 1.6rem;
   }
-  .fa-angle-double-down {
-    font-size: 4rem;
+  .btn-video {
+    width: 80px;
+    height: 80px;
   }
   /* BLOC VIDEO FIN */
 }
