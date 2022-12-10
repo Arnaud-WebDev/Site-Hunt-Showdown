@@ -126,6 +126,16 @@
 .hr {
   margin-bottom: 20px;
 }
+.steam {
+  background: url(../images/svg/steam-square.svg) center center / 60% 60% no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
 @media only screen and (min-width: 700px) {
   .container-chasseurs {
     justify-content: center;
