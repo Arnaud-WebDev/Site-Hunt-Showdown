@@ -1606,7 +1606,7 @@ iframe {
 .video-h1 {
   position: absolute;
   bottom: 10%;
-  left: 52%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 5px;
