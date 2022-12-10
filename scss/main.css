@@ -1643,7 +1643,8 @@ iframe {
   position: absolute;
   bottom: 15%;
   left: 50%;
-  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   -webkit-animation-name: rebond;
           animation-name: rebond;
   -webkit-animation-duration: 0.5s;

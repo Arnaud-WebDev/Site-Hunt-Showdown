@@ -137,7 +137,7 @@ iframe {
   position: absolute;
   bottom: 15%;
   left: 50%;
-  right: 50%;
+  transform: translate(-50%);
   animation-name: rebond;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
