@@ -1938,6 +1938,7 @@ iframe {
   font-weight: bold;
   font-family: "Noto Serif", sans-serif;
   text-shadow: 3px 3px 0px black;
+  font-size: 0.8rem;
 }
 
 .card-chasseur span {
