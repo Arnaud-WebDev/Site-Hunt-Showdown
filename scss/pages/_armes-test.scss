@@ -32,19 +32,16 @@
 }
 .weapon-stat {
   width: 100%;
-  margin: 10px;
-  padding: 10px;
+  padding: 15px;
 }
 .weapon-damage {
   display: flex;
   justify-content: space-between;
   color: grey;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-bottom: 3px;
 }
 .weapon-line {
-  width: 99%;
+  width: 100%;
   position: relative;
 }
 /* Les ligne de stats */
@@ -70,12 +67,12 @@
     align-items: center;
   }
   .weapon-damage span {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-style: italic;
     font-family: "Noto Serif";
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1250px) {
   .weapon-damage span {
     font-size: 0.9rem;
   }
