@@ -1,7 +1,6 @@
 .container-weapon-container {
   width: 100%;
   height: 100%;
-  border: 2px solid black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -23,9 +22,11 @@
 .weapon-ammo-box {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-.weapon-ammo-box img {
-  max-height: 3.4em;
+.image-ammo-box img {
+  width: 32px;
+  height: 64px;
   margin-left: 20px;
 }
 .weapon-box img {
@@ -52,7 +53,9 @@
   color: grey;
   margin-bottom: 3px;
 }
-
+.degats {
+  color: white;
+}
 .weapon-line {
   width: 100%;
   position: relative;
@@ -82,8 +85,28 @@
   background-color: white;
   z-index: 1;
 }
+.blue-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: rgb(74, 74, 190);
+  z-index: 1;
+}
 @media only screen and (min-width: 1043px) {
-  .weapon-ammo-box img {
+  .weapon-box a {
+    font-size: 0.7rem;
+  }
+  .weapon-ammo-box {
+    width: 30%;
+    flex-direction: column;
+  }
+  .image-ammo-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .image-ammo-box img {
     margin: 0;
   }
   .weapon-container {
@@ -97,6 +120,9 @@
   }
 }
 @media only screen and (min-width: 1300px) {
+  .weapon-box a {
+    font-size: 0.9rem;
+  }
   .weapon-damage span {
     font-size: 1rem;
   }

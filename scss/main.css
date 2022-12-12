@@ -2049,7 +2049,6 @@ iframe {
 .container-weapon-container {
   width: 100%;
   height: 100%;
-  border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2094,10 +2093,12 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
-.weapon-ammo-box img {
-  max-height: 3.4em;
+.image-ammo-box img {
+  width: 32px;
+  height: 64px;
   margin-left: 20px;
 }
 
@@ -2141,6 +2142,10 @@ iframe {
   margin-bottom: 3px;
 }
 
+.degats {
+  color: white;
+}
+
 .weapon-line {
   width: 100%;
   position: relative;
@@ -2174,8 +2179,36 @@ iframe {
   z-index: 1;
 }
 
+.blue-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: #4a4abe;
+  z-index: 1;
+}
+
 @media only screen and (min-width: 1043px) {
-  .weapon-ammo-box img {
+  .weapon-box a {
+    font-size: 0.7rem;
+  }
+  .weapon-ammo-box {
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .image-ammo-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .image-ammo-box img {
     margin: 0;
   }
   .weapon-container {
@@ -2195,6 +2228,9 @@ iframe {
 }
 
 @media only screen and (min-width: 1300px) {
+  .weapon-box a {
+    font-size: 0.9rem;
+  }
   .weapon-damage span {
     font-size: 1rem;
   }
