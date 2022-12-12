@@ -2256,6 +2256,98 @@ iframe {
   .weapon-damage span {
     font-size: 0.75rem;
   }
+  /* ANIMATION  */
+  .weapon-container:first-child {
+    -webkit-animation-name: fade-weapon-container;
+            animation-name: fade-weapon-container;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes fade-weapon-container {
+    from {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-weapon-container {
+    from {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .weapon-container:nth-child(2n + 0) {
+    -webkit-animation-name: fade-weapon-container-X;
+            animation-name: fade-weapon-container-X;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes fade-weapon-container-X {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-weapon-container-X {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .weapon-container:nth-child(2n + 3) {
+    -webkit-animation-name: fade-weapon-container-Y;
+            animation-name: fade-weapon-container-Y;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes fade-weapon-container-Y {
+    from {
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-weapon-container-Y {
+    from {
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* ANIMATION FIN */
 }
 
 @media only screen and (min-width: 1300px) {

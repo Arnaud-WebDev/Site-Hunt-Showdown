@@ -139,6 +139,50 @@
   .weapon-damage span {
     font-size: 0.75rem;
   }
+  /* ANIMATION  */
+  .weapon-container:first-child {
+    animation-name: fade-weapon-container;
+    animation-duration: 2s;
+  }
+  @keyframes fade-weapon-container {
+    from {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .weapon-container:nth-child(2n + 0) {
+    animation-name: fade-weapon-container-X;
+    animation-duration: 2s;
+  }
+  @keyframes fade-weapon-container-X {
+    from {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .weapon-container:nth-child(2n + 3) {
+    animation-name: fade-weapon-container-Y;
+    animation-duration: 2s;
+  }
+  @keyframes fade-weapon-container-Y {
+    from {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* ANIMATION FIN */
 }
 @media only screen and (min-width: 1300px) {
   .weapon-box a {
