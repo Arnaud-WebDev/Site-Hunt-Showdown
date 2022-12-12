@@ -2071,7 +2071,8 @@ iframe {
           flex-direction: column;
   background-color: black;
   width: 80%;
-  margin: 20px;
+  margin: 5px;
+  border: 1px solid rgba(54, 51, 51, 0.822);
 }
 
 .weapon-box {
