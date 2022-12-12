@@ -2107,6 +2107,11 @@ iframe {
   height: 100%;
 }
 
+.weapon-damage span {
+  font-style: italic;
+  font-family: "Noto Serif";
+}
+
 .weapon-box a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2140,6 +2145,32 @@ iframe {
           justify-content: space-between;
   color: grey;
   margin-bottom: 3px;
+}
+
+.weapon-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  font-style: italic;
+  font-family: "Noto Serif", sans-serif;
+  position: relative;
+}
+
+.weapon-cost img {
+  width: 33px;
+  height: 33px;
+}
+
+.cost {
+  position: absolute;
+  right: 40px;
 }
 
 .degats {
@@ -2222,8 +2253,6 @@ iframe {
   }
   .weapon-damage span {
     font-size: 0.75rem;
-    font-style: italic;
-    font-family: "Noto Serif";
   }
 }
 

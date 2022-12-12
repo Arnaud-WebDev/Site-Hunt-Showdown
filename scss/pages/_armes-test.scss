@@ -33,6 +33,10 @@
   width: 100%;
   height: 100%;
 }
+.weapon-damage span {
+  font-style: italic;
+  font-family: "Noto Serif";
+}
 .weapon-box a {
   display: flex;
   flex-direction: column;
@@ -52,6 +56,23 @@
   justify-content: space-between;
   color: grey;
   margin-bottom: 3px;
+}
+.weapon-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  font-style: italic;
+  font-family: "Noto Serif", sans-serif;
+  position: relative;
+}
+.weapon-cost img {
+  width: 33px;
+  height: 33px;
+}
+.cost {
+  position: absolute;
+  right: 40px;
 }
 .degats {
   color: white;
@@ -115,8 +136,6 @@
   }
   .weapon-damage span {
     font-size: 0.75rem;
-    font-style: italic;
-    font-family: "Noto Serif";
   }
 }
 @media only screen and (min-width: 1300px) {
