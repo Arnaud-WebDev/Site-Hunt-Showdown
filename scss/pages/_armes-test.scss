@@ -1,3 +1,27 @@
+body#armes {
+  background: url(../images/Hunt-Wallpaper-7-2560x1440.jpg) fixed no-repeat center;
+  background-size: cover;
+}
+
+body#armes p {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+.p-armes {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+}
+.armes-h1 {
+  font-family: "Smokum", sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 20px;
+}
+.invisible-margin {
+  width: 100%;
+  height: 100px;
+}
+
 .container-weapon-container {
   width: 100%;
   height: 100%;
