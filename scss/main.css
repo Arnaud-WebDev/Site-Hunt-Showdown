@@ -2240,7 +2240,7 @@ body#armes p {
 /* Les ligne de stats */
 .grey-line {
   width: 100%;
-  height: 4px;
+  height: 5px;
   background-color: grey;
   display: block;
   z-index: 0;
@@ -2252,25 +2252,16 @@ body#armes p {
   z-index: 1;
   background-color: red;
   width: 100%;
-  height: 4px;
+  height: 5px;
   display: block;
 }
 
 .white-line {
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 5px;
   display: block;
   background-color: white;
-  z-index: 1;
-}
-
-.blue-line {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  display: block;
-  background-color: #4a4abe;
   z-index: 1;
 }
 
