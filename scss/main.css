@@ -2162,6 +2162,30 @@ body#armes p {
   width: 100%;
 }
 
+.weapon-capacite {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.weapon-capacite img {
+  width: 32px;
+  height: 64px;
+}
+
+.weapon-capacite span {
+  margin-bottom: 3px;
+  color: white;
+  font-family: "Noto Serif", sans-serif;
+}
+
 .weapon-stat {
   width: 100%;
   padding: 15px;
@@ -2251,6 +2275,19 @@ body#armes p {
 }
 
 @media only screen and (min-width: 1043px) {
+  .weapon-capacite {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 28%;
+  }
+  .weapon-capacite span {
+    font-size: 0.9rem;
+  }
   .weapon-box a {
     font-size: 0.8rem;
   }
@@ -2283,7 +2320,7 @@ body#armes p {
             align-items: center;
   }
   .weapon-damage span {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
   /* ANIMATION  */
   .weapon-container:first-child {
@@ -2384,7 +2421,7 @@ body#armes p {
     font-size: 1.1rem;
   }
   .weapon-damage span {
-    font-size: 1rem;
+    font-size: 0.96rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
