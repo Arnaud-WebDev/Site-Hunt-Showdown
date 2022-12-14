@@ -61,7 +61,7 @@ body#armes p {
 }
 .weapon-damage span {
   font-style: italic;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", sans-serif;
 }
 .weapon-box a {
   display: flex;
@@ -70,6 +70,7 @@ body#armes p {
   text-decoration: none;
   color: white;
   text-align: center;
+  font-family: "Noto Serif", sans-serif;
 }
 .weapon-stats-box {
   width: 100%;
@@ -143,7 +144,7 @@ body#armes p {
 }
 @media only screen and (min-width: 1043px) {
   .weapon-box a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .weapon-ammo-box {
     width: 30%;
@@ -211,7 +212,7 @@ body#armes p {
 }
 @media only screen and (min-width: 1300px) {
   .weapon-box a {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   .weapon-damage span {
     font-size: 1rem;
