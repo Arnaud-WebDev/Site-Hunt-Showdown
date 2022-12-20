@@ -2284,6 +2284,10 @@ body#armes p {
   display: none;
 }
 
+.weapon-capacite p {
+  display: none;
+}
+
 /* INFOBULLE FIN */
 @media only screen and (min-width: 1043px) {
   .weapon-capacite {
@@ -2423,6 +2427,7 @@ body#armes p {
   }
   /* ANIMATION FIN */
   /* INFOBULLE */
+  /* Infobulle image */
   .weapon-box span {
     display: block;
     position: absolute;
@@ -2448,13 +2453,13 @@ body#armes p {
   .weapon-box a span::before {
     content: "";
     position: absolute;
-    top: -6px;
+    top: -10px;
     left: 30px;
     width: 0;
     height: 0;
-    border-bottom: 6px solid #33383b;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
+    border-bottom: 10px solid #33383b;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
   }
   .weapon-box:hover span,
   .weapon-box:focus span {
@@ -2462,6 +2467,54 @@ body#armes p {
             transform: scale(1) rotate(0);
     opacity: 1;
   }
+  /* Infobulle image fin*/
+  /* Infobulle ammo */
+  .weapon-capacite {
+    cursor: pointer;
+  }
+  .weapon-capacite p {
+    display: block;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 5px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.9rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-capacite p::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #33383b;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+  .weapon-capacite:hover p,
+  .weapon-capacite:focus p {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  /* Infobulle ammo fin*/
+  /* Infobulle statistique*/
   .weapon-damage span {
     cursor: pointer;
   }
@@ -2504,6 +2557,8 @@ body#armes p {
             transform: scale(1) rotate(0);
     opacity: 1;
   }
+  /* Infobulle statistique fin*/
+  /* Infobulle special ammo */
   .infobulle-image p {
     display: block;
     position: absolute;
@@ -2546,7 +2601,8 @@ body#armes p {
   .image-ammo-box div {
     cursor: pointer;
   }
-  /* INFOBULLE */
+  /* Infobulle special ammo fin */
+  /* INFOBULLE FIN*/
 }
 
 @media only screen and (min-width: 1300px) {
