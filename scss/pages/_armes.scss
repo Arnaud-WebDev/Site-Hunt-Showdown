@@ -93,6 +93,25 @@ body#armes p {
   color: white;
   font-family: "Noto Serif", sans-serif;
 }
+.weapon-capacite-lemat {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.weapon-capacite-lemat img {
+  width: 32px;
+  height: 64px;
+}
+.weapon-capacite-lemat span {
+  margin-bottom: 3px;
+  color: white;
+  font-family: "Noto Serif", sans-serif;
+}
+.weapon-capacite-ammo {
+  display: flex;
+  align-items: end;
+}
 .weapon-stat {
   width: 100%;
   padding: 15px;
@@ -164,7 +183,9 @@ body#armes p {
 .infobulle-image p {
   display: none;
 }
-
+.weapon-capacite-ammo p {
+  display: none;
+}
 .weapon-capacite p {
   display: none;
 }
@@ -180,6 +201,19 @@ body#armes p {
     width: 28%;
   }
   .weapon-capacite span {
+    font-size: 0.9rem;
+  }
+  .weapon-capacite-lemat {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 28%;
+  }
+  .weapon-capacite-ammo {
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .weapon-capacite-ammo span {
     font-size: 0.9rem;
   }
   .weapon-box a {
@@ -328,6 +362,43 @@ body#armes p {
     transform: scale(1) rotate(0);
     opacity: 1;
   }
+
+  .weapon-capacite-ammo p {
+    display: block;
+    position: absolute;
+    margin-top: 95px;
+    margin-right: 0px;
+    color: white;
+    background: rgb(51, 56, 59);
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transform: scale(0) rotate(-12deg);
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.9rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-capacite-ammo p::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid rgb(51, 56, 59);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+  .weapon-capacite-ammo:hover p,
+  .weapon-capacite-ammo:focus p {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
   /* Infobulle ammo fin*/
 
   /* Infobulle statistique*/
@@ -415,7 +486,7 @@ body#armes p {
 
   /* INFOBULLE FIN*/
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1330px) {
   .weapon-box a {
     font-size: 1.1rem;
   }

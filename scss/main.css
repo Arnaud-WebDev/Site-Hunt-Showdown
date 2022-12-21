@@ -1025,17 +1025,6 @@ body#armes p {
   font-size: 1.2em;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
-.H2armes {
-  text-align: center;
-  margin-left: 20px;
-  font-size: 2em;
-  font-family: "Tinos", sans-serif;
-}
-
 .p-armes {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
@@ -1047,88 +1036,86 @@ body#armes p {
   padding-top: 20px;
 }
 
-/* TABLEAU ARMES */
 .invisible-margin {
   width: 100%;
   height: 100px;
 }
 
-.table-scroll {
-  height: 100%;
-  width: 100%;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-th,
-td {
-  padding: 9px;
-}
-
-tbody tr,
-td,
-th {
-  border: 1px solid #ddd;
-}
-
-thead tr th {
-  background-color: rgba(0, 0, 0, 0.9);
-  /* rgb(25, 30, 34) */
-  /* Trandsparence 0.904 */
-  color: white;
-  text-align: center;
-  font-family: "Tinos", sans-serif;
-  font-size: 1.3em;
-  font-weight: 500;
-}
-
-tbody tr td {
-  color: #f7e1e1;
-  text-align: center;
-}
-
-caption {
-  padding: 10px;
-  background-color: rgba(25, 30, 34, 0.904);
-}
-
-.table-style {
-  font-size: 1.3em;
-  font-weight: 900;
-  width: 5%;
-  background-color: black;
-  /* rgb(25, 30, 34) */
-  /* Transparence 0.904 */
-}
-
-.table-style-underline {
-  text-decoration: underline;
-  font-size: 1.3em;
-  font-weight: 900;
-  width: 5%;
-  background-color: black;
-  /* rgb(25, 30, 34) ;*/
-}
-
-.table-armes {
-  background-color: black;
-  /* rgb(25, 30, 34); */
-  width: 20%;
-}
-
-.image-arme {
+.container-weapon-container {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.tableau-style {
-  border-collapse: collapse;
-  max-width: 100%;
-  border: 2px solid white;
-  margin: 20px 10px 0px 10px;
+.weapon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  width: 80%;
+  margin: 5px;
+  border: 1px solid rgba(54, 51, 51, 0.822);
 }
 
-.flex-container-table {
+.weapon-box {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.weapon-ammo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.image-ammo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-ammo-box img {
+  width: 32px;
+  height: 64px;
+  margin-left: 20px;
+}
+
+.weapon-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.weapon-damage span {
+  font-style: italic;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.weapon-box a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,53 +1126,252 @@ caption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px;
-  margin-top: 100px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.weapon-stats-box {
   width: 100%;
 }
 
-/* TABLEAU ARMES FIN  */
-/* BACKGROUND IMAGE */
-/* MEDIA QUERIES */
-@media only screen and (min-width: 1024px) {
-  /* TABLEAU */
-  .tableau-style {
-    margin-left: 100px;
-    margin-right: 100px;
+.weapon-capacite {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.weapon-capacite img {
+  width: 32px;
+  height: 64px;
+}
+
+.weapon-capacite span {
+  margin-bottom: 3px;
+  color: white;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.weapon-capacite-lemat {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.weapon-capacite-lemat img {
+  width: 32px;
+  height: 64px;
+}
+
+.weapon-capacite-lemat span {
+  margin-bottom: 3px;
+  color: white;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.weapon-capacite-ammo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.weapon-stat {
+  width: 100%;
+  padding: 15px;
+}
+
+.weapon-damage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: grey;
+  margin-bottom: 3px;
+}
+
+.weapon-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  font-style: italic;
+  font-family: "Noto Serif", sans-serif;
+  position: relative;
+}
+
+.weapon-cost img {
+  width: 33px;
+  height: 33px;
+}
+
+.cost {
+  position: absolute;
+  right: 40px;
+}
+
+.degats {
+  color: white;
+}
+
+.weapon-line {
+  width: 100%;
+  position: relative;
+}
+
+/* Les ligne de stats */
+.grey-line {
+  width: 100%;
+  height: 5px;
+  background-color: grey;
+  display: block;
+  z-index: 0;
+  position: absolute;
+}
+
+.red-line {
+  position: absolute;
+  z-index: 1;
+  background-color: red;
+  width: 100%;
+  height: 5px;
+  display: block;
+}
+
+.white-line {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+/* INFOBULLE  */
+.weapon-box span {
+  display: none;
+}
+
+.weapon-damage p {
+  display: none;
+}
+
+.infobulle-image p {
+  display: none;
+}
+
+.weapon-capacite-ammo p {
+  display: none;
+}
+
+.weapon-capacite p {
+  display: none;
+}
+
+/* INFOBULLE FIN */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1043px) {
+  .weapon-capacite {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 28%;
   }
-  /* TABLEAU FIN */
-  /* ANIMATION TABLEAU */
-  caption {
-    -webkit-animation-name: fade-table-caption;
-            animation-name: fade-table-caption;
+  .weapon-capacite span {
+    font-size: 0.9rem;
+  }
+  .weapon-capacite-lemat {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 28%;
+  }
+  .weapon-capacite-ammo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .weapon-capacite-ammo span {
+    font-size: 0.9rem;
+  }
+  .weapon-box a {
+    font-size: 0.8rem;
+  }
+  .weapon-ammo-box {
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .image-ammo-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .image-ammo-box img {
+    margin: 0;
+  }
+  .weapon-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .weapon-damage span {
+    font-size: 0.7rem;
+  }
+  /* ANIMATION  */
+  .weapon-container:first-child {
+    -webkit-animation-name: fade-weapon-container;
+            animation-name: fade-weapon-container;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
   }
-  thead {
-    -webkit-animation-name: fade-table-tr;
-            animation-name: fade-table-tr;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  .table-armes {
-    -webkit-animation-name: fade-table-armes;
-            animation-name: fade-table-armes;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  .table-style {
-    -webkit-animation-name: fade-table-style;
-            animation-name: fade-table-style;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  .table-style-underline {
-    -webkit-animation-name: fade-table-underline;
-            animation-name: fade-table-underline;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  @-webkit-keyframes fade-table-caption {
+  @-webkit-keyframes fade-weapon-container {
     from {
       -webkit-transform: translateY(-300px);
               transform: translateY(-300px);
@@ -1197,7 +1383,7 @@ caption {
       opacity: 1;
     }
   }
-  @keyframes fade-table-caption {
+  @keyframes fade-weapon-container {
     from {
       -webkit-transform: translateY(-300px);
               transform: translateY(-300px);
@@ -1209,31 +1395,13 @@ caption {
       opacity: 1;
     }
   }
-  @-webkit-keyframes fade-table-tr {
-    from {
-      -webkit-transform: translateX(300px);
-              transform: translateX(300px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  .weapon-container:nth-child(2n + 0) {
+    -webkit-animation-name: fade-weapon-container-X;
+            animation-name: fade-weapon-container-X;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
-  @keyframes fade-table-tr {
-    from {
-      -webkit-transform: translateX(300px);
-              transform: translateX(300px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fade-table-armes {
+  @-webkit-keyframes fade-weapon-container-X {
     from {
       -webkit-transform: translateX(-300px);
               transform: translateX(-300px);
@@ -1245,7 +1413,7 @@ caption {
       opacity: 1;
     }
   }
-  @keyframes fade-table-armes {
+  @keyframes fade-weapon-container-X {
     from {
       -webkit-transform: translateX(-300px);
               transform: translateX(-300px);
@@ -1257,55 +1425,264 @@ caption {
       opacity: 1;
     }
   }
-  @-webkit-keyframes fade-table-style {
+  .weapon-container:nth-child(2n + 3) {
+    -webkit-animation-name: fade-weapon-container-Y;
+            animation-name: fade-weapon-container-Y;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes fade-weapon-container-Y {
     from {
-      -webkit-transform: translateY(300px);
-              transform: translateY(300px);
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
       opacity: 0;
     }
     to {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
   }
-  @keyframes fade-table-style {
+  @keyframes fade-weapon-container-Y {
     from {
-      -webkit-transform: translateY(300px);
-              transform: translateY(300px);
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
       opacity: 0;
     }
     to {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
   }
-  @-webkit-keyframes fade-table-underline {
-    from {
-      -webkit-transform: translateY(-300px);
-              transform: translateY(-300px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
+  /* ANIMATION FIN */
+  /* INFOBULLE */
+  /* Infobulle image */
+  .weapon-box span {
+    display: block;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 35px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.699);
   }
-  @keyframes fade-table-underline {
-    from {
-      -webkit-transform: translateY(-300px);
-              transform: translateY(-300px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
+  .weapon-box a span::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #33383b;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
   }
-  /* ANIMATION TABLEAU */
+  .weapon-box:hover span,
+  .weapon-box:focus span {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  /* Infobulle image fin*/
+  /* Infobulle ammo */
+  .weapon-capacite {
+    cursor: pointer;
+  }
+  .weapon-capacite p {
+    display: block;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 5px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.9rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-capacite p::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #33383b;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+  .weapon-capacite:hover p,
+  .weapon-capacite:focus p {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  .weapon-capacite-ammo p {
+    display: block;
+    position: absolute;
+    margin-top: 95px;
+    margin-right: 0px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.9rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-capacite-ammo p::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #33383b;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
+  .weapon-capacite-ammo:hover p,
+  .weapon-capacite-ammo:focus p {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  /* Infobulle ammo fin*/
+  /* Infobulle statistique*/
+  .weapon-damage span {
+    cursor: pointer;
+  }
+  .weapon-damage p {
+    display: block;
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 5px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 10%;
+    font-size: 0.8rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-damage p::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid #33383b;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .weapon-damage:hover p,
+  .weapon-damage:focus p {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  /* Infobulle statistique fin*/
+  /* Infobulle special ammo */
+  .infobulle-image p {
+    display: block;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 8px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 10%;
+    font-size: 0.8rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .infobulle-image p::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid #33383b;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .infobulle-image:hover p,
+  .infobulle-image:focus p {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  .image-ammo-box div {
+    cursor: pointer;
+  }
+  /* Infobulle special ammo fin */
+  /* INFOBULLE FIN*/
+}
+
+@media only screen and (min-width: 1330px) {
+  .weapon-box a {
+    font-size: 1.1rem;
+  }
+  .weapon-damage span {
+    font-size: 0.96rem;
+  }
 }
 
 body#patchnotes {
@@ -2057,6 +2434,17 @@ body#armes p {
   font-size: 1.2em;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.H2armes {
+  text-align: center;
+  margin-left: 20px;
+  font-size: 2em;
+  font-family: "Tinos", sans-serif;
+}
+
 .p-armes {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
@@ -2068,282 +2456,145 @@ body#armes p {
   padding-top: 20px;
 }
 
+/* TABLEAU ARMES */
 .invisible-margin {
   width: 100%;
   height: 100px;
 }
 
-.container-weapon-container {
-  width: 100%;
+.table-scroll {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.weapon-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: black;
-  width: 80%;
-  margin: 5px;
-  border: 1px solid rgba(54, 51, 51, 0.822);
-}
-
-.weapon-box {
   width: 100%;
-  height: 100%;
-  padding: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
 
-.weapon-ammo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+th,
+td {
+  padding: 9px;
 }
 
-.image-ammo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+tbody tr,
+td,
+th {
+  border: 1px solid #ddd;
 }
 
-.image-ammo-box img {
-  width: 32px;
-  height: 64px;
-  margin-left: 20px;
-}
-
-.weapon-box img {
-  width: 100%;
-  height: 100%;
-}
-
-.weapon-damage span {
-  font-style: italic;
-  font-family: "Noto Serif", sans-serif;
-}
-
-.weapon-box a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
+thead tr th {
+  background-color: rgba(0, 0, 0, 0.9);
+  /* rgb(25, 30, 34) */
+  /* Trandsparence 0.904 */
   color: white;
   text-align: center;
-  font-family: "Noto Serif", sans-serif;
+  font-family: "Tinos", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
-.weapon-stats-box {
-  width: 100%;
+tbody tr td {
+  color: #f7e1e1;
+  text-align: center;
 }
 
-.weapon-capacite {
+caption {
+  padding: 10px;
+  background-color: rgba(25, 30, 34, 0.904);
+}
+
+.table-style {
+  font-size: 1.3em;
+  font-weight: 900;
+  width: 5%;
+  background-color: black;
+  /* rgb(25, 30, 34) */
+  /* Transparence 0.904 */
+}
+
+.table-style-underline {
+  text-decoration: underline;
+  font-size: 1.3em;
+  font-weight: 900;
+  width: 5%;
+  background-color: black;
+  /* rgb(25, 30, 34) ;*/
+}
+
+.table-armes {
+  background-color: black;
+  /* rgb(25, 30, 34); */
+  width: 20%;
+}
+
+.image-arme {
   width: 100%;
+  height: 100%;
+}
+
+.tableau-style {
+  border-collapse: collapse;
+  max-width: 100%;
+  border: 2px solid white;
+  margin: 20px 10px 0px 10px;
+}
+
+.flex-container-table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.weapon-capacite img {
-  width: 32px;
-  height: 64px;
-}
-
-.weapon-capacite span {
-  margin-bottom: 3px;
-  color: white;
-  font-family: "Noto Serif", sans-serif;
-}
-
-.weapon-stat {
-  width: 100%;
-  padding: 15px;
-}
-
-.weapon-damage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: grey;
-  margin-bottom: 3px;
-}
-
-.weapon-cost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: grey;
-  font-style: italic;
-  font-family: "Noto Serif", sans-serif;
-  position: relative;
-}
-
-.weapon-cost img {
-  width: 33px;
-  height: 33px;
-}
-
-.cost {
-  position: absolute;
-  right: 40px;
-}
-
-.degats {
-  color: white;
-}
-
-.weapon-line {
+  margin-bottom: 100px;
+  margin-top: 100px;
   width: 100%;
-  position: relative;
 }
 
-/* Les ligne de stats */
-.grey-line {
-  width: 100%;
-  height: 5px;
-  background-color: grey;
-  display: block;
-  z-index: 0;
-  position: absolute;
-}
-
-.red-line {
-  position: absolute;
-  z-index: 1;
-  background-color: red;
-  width: 100%;
-  height: 5px;
-  display: block;
-}
-
-.white-line {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  display: block;
-  background-color: white;
-  z-index: 1;
-}
-
-/* INFOBULLE  */
-.weapon-box span {
-  display: none;
-}
-
-.weapon-damage p {
-  display: none;
-}
-
-.infobulle-image p {
-  display: none;
-}
-
-.weapon-capacite p {
-  display: none;
-}
-
-/* INFOBULLE FIN */
-/* ---------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- */
-@media only screen and (min-width: 1043px) {
-  .weapon-capacite {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 28%;
+/* TABLEAU ARMES FIN  */
+/* BACKGROUND IMAGE */
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  /* TABLEAU */
+  .tableau-style {
+    margin-left: 100px;
+    margin-right: 100px;
   }
-  .weapon-capacite span {
-    font-size: 0.9rem;
-  }
-  .weapon-box a {
-    font-size: 0.8rem;
-  }
-  .weapon-ammo-box {
-    width: 30%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .image-ammo-box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  .image-ammo-box img {
-    margin: 0;
-  }
-  .weapon-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .weapon-damage span {
-    font-size: 0.7rem;
-  }
-  /* ANIMATION  */
-  .weapon-container:first-child {
-    -webkit-animation-name: fade-weapon-container;
-            animation-name: fade-weapon-container;
+  /* TABLEAU FIN */
+  /* ANIMATION TABLEAU */
+  caption {
+    -webkit-animation-name: fade-table-caption;
+            animation-name: fade-table-caption;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
   }
-  @-webkit-keyframes fade-weapon-container {
+  thead {
+    -webkit-animation-name: fade-table-tr;
+            animation-name: fade-table-tr;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  .table-armes {
+    -webkit-animation-name: fade-table-armes;
+            animation-name: fade-table-armes;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  .table-style {
+    -webkit-animation-name: fade-table-style;
+            animation-name: fade-table-style;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  .table-style-underline {
+    -webkit-animation-name: fade-table-underline;
+            animation-name: fade-table-underline;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes fade-table-caption {
     from {
       -webkit-transform: translateY(-300px);
               transform: translateY(-300px);
@@ -2355,7 +2606,7 @@ body#armes p {
       opacity: 1;
     }
   }
-  @keyframes fade-weapon-container {
+  @keyframes fade-table-caption {
     from {
       -webkit-transform: translateY(-300px);
               transform: translateY(-300px);
@@ -2367,43 +2618,7 @@ body#armes p {
       opacity: 1;
     }
   }
-  .weapon-container:nth-child(2n + 0) {
-    -webkit-animation-name: fade-weapon-container-X;
-            animation-name: fade-weapon-container-X;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  @-webkit-keyframes fade-weapon-container-X {
-    from {
-      -webkit-transform: translateX(-300px);
-              transform: translateX(-300px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-weapon-container-X {
-    from {
-      -webkit-transform: translateX(-300px);
-              transform: translateX(-300px);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  .weapon-container:nth-child(2n + 3) {
-    -webkit-animation-name: fade-weapon-container-Y;
-            animation-name: fade-weapon-container-Y;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  @-webkit-keyframes fade-weapon-container-Y {
+  @-webkit-keyframes fade-table-tr {
     from {
       -webkit-transform: translateX(300px);
               transform: translateX(300px);
@@ -2415,7 +2630,7 @@ body#armes p {
       opacity: 1;
     }
   }
-  @keyframes fade-weapon-container-Y {
+  @keyframes fade-table-tr {
     from {
       -webkit-transform: translateX(300px);
               transform: translateX(300px);
@@ -2427,193 +2642,79 @@ body#armes p {
       opacity: 1;
     }
   }
-  /* ANIMATION FIN */
-  /* INFOBULLE */
-  /* Infobulle image */
-  .weapon-box span {
-    display: block;
-    position: absolute;
-    margin-top: 63px;
-    margin-left: 35px;
-    color: white;
-    background: #33383b;
-    padding: 5px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(0) rotate(-12deg);
-            transform: scale(0) rotate(-12deg);
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    opacity: 0;
-    z-index: 2;
-    font-family: "Noto Serif", sans-serif;
-    max-width: 15%;
-    font-size: 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.699);
+  @-webkit-keyframes fade-table-armes {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
   }
-  .weapon-box a span::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 30px;
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid #33383b;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+  @keyframes fade-table-armes {
+    from {
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
   }
-  .weapon-box:hover span,
-  .weapon-box:focus span {
-    -webkit-transform: scale(1) rotate(0);
-            transform: scale(1) rotate(0);
-    opacity: 1;
+  @-webkit-keyframes fade-table-style {
+    from {
+      -webkit-transform: translateY(300px);
+              transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
   }
-  /* Infobulle image fin*/
-  /* Infobulle ammo */
-  .weapon-capacite {
-    cursor: pointer;
+  @keyframes fade-table-style {
+    from {
+      -webkit-transform: translateY(300px);
+              transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
   }
-  .weapon-capacite p {
-    display: block;
-    position: absolute;
-    margin-top: 125px;
-    margin-left: 5px;
-    color: white;
-    background: #33383b;
-    padding: 5px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(0) rotate(-12deg);
-            transform: scale(0) rotate(-12deg);
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    opacity: 0;
-    z-index: 2;
-    font-family: "Noto Serif", sans-serif;
-    max-width: 15%;
-    font-size: 0.9rem !important;
-    border: 1px solid rgba(255, 255, 255, 0.699);
+  @-webkit-keyframes fade-table-underline {
+    from {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
   }
-  .weapon-capacite p::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    width: 0;
-    height: 0;
-    border-bottom: 8px solid #33383b;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+  @keyframes fade-table-underline {
+    from {
+      -webkit-transform: translateY(-300px);
+              transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
   }
-  .weapon-capacite:hover p,
-  .weapon-capacite:focus p {
-    -webkit-transform: scale(1) rotate(0);
-            transform: scale(1) rotate(0);
-    opacity: 1;
-  }
-  /* Infobulle ammo fin*/
-  /* Infobulle statistique*/
-  .weapon-damage span {
-    cursor: pointer;
-  }
-  .weapon-damage p {
-    display: block;
-    position: absolute;
-    margin-top: 28px;
-    margin-left: 5px;
-    color: white;
-    background: #33383b;
-    padding: 5px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(0) rotate(-12deg);
-            transform: scale(0) rotate(-12deg);
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    opacity: 0;
-    z-index: 2;
-    font-family: "Noto Serif", sans-serif;
-    max-width: 10%;
-    font-size: 0.8rem !important;
-    border: 1px solid rgba(255, 255, 255, 0.699);
-  }
-  .weapon-damage p::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-bottom: 6px solid #33383b;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-  }
-  .weapon-damage:hover p,
-  .weapon-damage:focus p {
-    -webkit-transform: scale(1) rotate(0);
-            transform: scale(1) rotate(0);
-    opacity: 1;
-  }
-  /* Infobulle statistique fin*/
-  /* Infobulle special ammo */
-  .infobulle-image p {
-    display: block;
-    position: absolute;
-    margin-top: 55px;
-    margin-left: 8px;
-    color: white;
-    background: #33383b;
-    padding: 5px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(0) rotate(-12deg);
-            transform: scale(0) rotate(-12deg);
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    opacity: 0;
-    z-index: 2;
-    font-family: "Noto Serif", sans-serif;
-    max-width: 10%;
-    font-size: 0.8rem !important;
-    border: 1px solid rgba(255, 255, 255, 0.699);
-  }
-  .infobulle-image p::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 2px;
-    width: 0;
-    height: 0;
-    border-bottom: 6px solid #33383b;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-  }
-  .infobulle-image:hover p,
-  .infobulle-image:focus p {
-    -webkit-transform: scale(1) rotate(0);
-            transform: scale(1) rotate(0);
-    opacity: 1;
-  }
-  .image-ammo-box div {
-    cursor: pointer;
-  }
-  /* Infobulle special ammo fin */
-  /* INFOBULLE FIN*/
-}
-
-@media only screen and (min-width: 1300px) {
-  .weapon-box a {
-    font-size: 1.1rem;
-  }
-  .weapon-damage span {
-    font-size: 0.96rem;
-  }
+  /* ANIMATION TABLEAU */
 }
 
 .button1 {
