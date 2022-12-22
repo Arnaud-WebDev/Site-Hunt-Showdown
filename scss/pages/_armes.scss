@@ -38,7 +38,7 @@ body#armes p {
   color: white;
 }
 ::placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.555);
   text-align: center;
   /*   font-size: 1.2rem; */
 }
@@ -220,6 +220,7 @@ body#armes p {
   /* Container pour le champs de recherche */
   .input {
     width: 40%;
+    font-size: 1.2rem;
   }
 
   /* Container pour le champs de recherche FIN */

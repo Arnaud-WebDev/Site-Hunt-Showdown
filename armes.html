@@ -67,9 +67,9 @@
             </p>
 
             <div class="container-input">
-                <input class="input" type="text" placeholder="Recherchez une arme... / Ne fonctionne pas  " id="maRecherche">
+                <input class="input" type="text" placeholder="Recherchez une arme... / Ne fonctionne pas  " id="maRecherche" onkeyup="filter()">
             </div>
-            <div class="container-weapon-container">
+            <div class="container-weapon-container" id="tableau">
 
                 <!-- Arbalète -->
                 <div class="weapon-container">
@@ -7829,6 +7829,7 @@
 
     <script src="./app.js"></script>
     <script src="./js/lightbox.js" type="module"></script>
+    <script src="./js/armes.js"></script>
 </body>
 
 </html>
