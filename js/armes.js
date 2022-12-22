@@ -7,7 +7,7 @@ function filter() {
   console.log(ligne, "ligne")
 
   for (i = 0; i < ligne.length; i++) {
-    const cellule = ligne[i].getElementsByTagName("div")[0]
+    const cellule = ligne[i].querySelectorAll(".title-arme")[0]
     console.log(cellule, "cellule")
     if (cellule) {
       const texte = cellule.innerText
