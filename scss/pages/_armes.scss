@@ -22,6 +22,28 @@ body#armes p {
   height: 100px;
 }
 
+/* Container pour le champs de recherche  */
+
+.container-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input {
+  text-align: center;
+  width: 60%;
+  height: 50px;
+  border: 1px solid white;
+  background-color: rgb(37, 36, 36);
+  color: white;
+}
+::placeholder {
+  color: white;
+  text-align: center;
+  /*   font-size: 1.2rem; */
+}
+/* Container pour le champs de recherche FIN */
+
 .container-weapon-container {
   width: 100%;
   height: 100%;
@@ -195,6 +217,12 @@ body#armes p {
 /* ---------------------------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1043px) {
+  /* Container pour le champs de recherche */
+  .input {
+    width: 40%;
+  }
+
+  /* Container pour le champs de recherche FIN */
   .weapon-capacite {
     flex-direction: column;
     align-items: center;
