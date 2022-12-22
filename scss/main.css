@@ -1385,7 +1385,7 @@ body#armes p {
     font-size: 0.9rem;
   }
   .weapon-box a {
-    font-size: 0.8rem;
+    font-size: 0.9rem !important;
   }
   .weapon-ammo-box {
     width: 30%;
