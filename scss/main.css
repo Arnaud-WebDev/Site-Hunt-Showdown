@@ -1059,6 +1059,7 @@ body#armes p {
   border: 1px solid white;
   background-color: #252424;
   color: white;
+  margin: 30px;
 }
 
 ::-webkit-input-placeholder {
