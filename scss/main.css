@@ -1221,7 +1221,7 @@ body#armes p {
 }
 
 .weapon-box-arc img {
-  width: 100%;
+  width: 30%;
   height: 100%;
 }
 
@@ -1500,9 +1500,6 @@ body#armes p {
   }
   .weapon-box-arc a {
     font-size: 0.9rem !important;
-  }
-  .weapon-box-arc img {
-    width: 30%;
   }
   .weapon-ammo-box {
     width: 30%;
