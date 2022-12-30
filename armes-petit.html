@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="description"
+        content="Découvrez toutes les armes de Hunt Showdown, ainsi que toutes leurs statistiques, leurs apparences et les balles spéciales qui vont avec !">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="icon" sizes="96x96" href="./images/Hunt_Logomark_White.webp" type="image/png">
+    <title>Hunt Showdown, Fansite</title>
+</head>
+
+<body id="armes">
+    <div class="content">
+
+        <header>
+            <nav>
+                <div>
+                    <a href="./index.html">
+                        <img src="./images/Hunt_Logomark_White.webp" alt="logo Hunt Showdown" class="logoNav">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="video.html">Mes Vidéos</a>
+                    </li>
+                    <li>
+                        <a href="armes.html">Armes/Statistiques</a>
+                    </li>
+                    <li>
+                        <a href="patchnotes.html">Patch Notes</a>
+                    </li>
+                    <li>
+                        <a href="./lore/lore.html">Le Lore</a>
+                    </li>
+                    <li>
+                        <a href="./chasseurs.html">Chasseurs Légendaires</a>
+                    </li>
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="btn-armes"></div>
+
+        <div class="content">
+
+            <h1 class="armes-h1">LES ARMES</h1>
+
+            <p class="p-armes">Il existe une variété astronomique d'armes dans Hunt Showdown, vous trouverez ici leurs
+                statistiques et un
+                visuel de celles-ci. Elles peuvent se débloquer via la lignée au fur et à mesure où l'on passe des
+                rangs. Pour
+                les variantes des armes en elle-même, elles se débloquent en jouant avec celle de base, en engrangeant
+                de l'XP.
+            </p>
+
+            <div class="container-input">
+                <input class="input" type="text" placeholder="Recherchez une arme..." id="maRecherche" onkeyup="filter()">
+            </div>
+
+            <div class="container-size-weapon">
+                <a href="armes.html" class="button-size-weapon">
+                    <div>Toutes les armes</div>
+                </a>
+                <a href="armes-petit.html" class="button-size-weapon-red">
+                    <div>Petit emplacement</div>
+                </a>
+                <a href="armes-moyen.html" class="button-size-weapon">
+                    <div>Moyen emplacement</div>
+                </a>
+                <a href="armes-grand.html" class="button-size-weapon">
+                    <div>Grand emplacement</div>
+                </a>
+
+            </div>
+
+            <div class="container-weapon-container" id="tableau">
+
+                <!-- Arbalète légère-->
+                <div class="weapon-container">
+                    <div class="weapon-box">
+                        <a href="./images/armes/arbalete-legere.webp">
+                            <p class="title-arme">Arbalète légère</p>
+                            <img src="./images/armes/arbalete-legere.webp" alt="Arbalète légère">
+                            <span> Arbalète à main créative qui tire des carreaux compacts. Excelle dans des situations où la discrétion est primordiale. Les
+                                carreaux peuvent être récupérés et réutilisés.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+                        <p>Carreau</p>
+                        <img src="./images/armes/carreau.webp" alt="Carreau">
+                        <span>1/16</span>
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'un tir au torse touchant un chasseur à 10 mètres.</p>
+                                <span class="degats">Dégâts</span>
+                                <span class="degats">195</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 100%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>La distance parcourue par le projectile lorsqu'il tombe n'aura pas assez d'effet pour
+                                    perturber votre visée.</p>
+                                <span>Distance visuelle</span>
+                                <span>45 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 45%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Combien de fois il est possible de tirer par minute, en tenant compte la préparation
+                                    d'un tir sans aucun autre délai
+                                    entre deux.</p>
+                                <span>Cadence de tir</span>
+                                <span>12 tr/min</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 12%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Une évaluation abstraite de l'efficacité en tenant compte du balancement de l'arme,
+                                    du recul et de la dispersion des
+                                    balles. Pour les armes de mêlée, cela tient compte de la consommation d'endurance,
+                                    de la portée et de l'angle d'attaque.
+                                    Plus le pourcentage est élevé, meilleur est le maniement de l'arme.</p>
+                                <span>Maniement</span>
+                                <span>53%</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 53%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Le temps (en secondes) qu'il vous faut pour recharger entièrement l'arme lorsqu'elle est vide. Cela inclut toute
+                                    technique particulière, telle que le rechargement en bloc.</p>
+                                <span>Vitesse de rechargement</span>
+                                <span>5s</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 25%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>La vitesse (mètre par seconde) à laquelle la balle tirée se déplacera. Les
+                                    projectiles plus lourds (tels que les
+                                    carreaux d'arbalète) se déplacent également dans un arc balistique.</p>
+                                <span>Vitesse balistique</span>
+                                <span>100 m/s</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 10%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts de mélée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">30</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box">
+                        <div class="image-ammo-box">
+                            <div class="infobulle-image">
+                                <p>Ce carreau libère un agent très toxique à l'impact. À haute dose, peut provoquer la mort en quelques secondes.</p>
+                                <img src="./images/armes/carreau-empoisonné.webp" alt="Carreau empoisonné">
+                            </div>
+                            <div class="infobulle-image">
+                                <p>Un carreau qui imite le bruit d'un échange de tirs, de la même façon que la grenade chaos, mais avec un effet plus court.</p>
+                                <img src="./images/armes/carreau-chaotique.webp" alt="Carreau chaotique">
+                            </div>
+                        </div>
+                        <div class="image-ammo-box">
+                            <div class="infobulle-image">
+                                <p>Une grenade suffocante prenant la forme d'une flèche. Durée et portée réduites. Utilisable de manière offensive et défensive.
+                                </p>
+                                <img src="./images/armes/carreau-suffocant.webp" alt="Carreau suffocant">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bonrheim n°3-->
+                <div class="weapon-container">
+                    <div class="weapon-box">
+                        <a href="./images/armes/bornheim.webp">
+                            <p class="title-arme">Bonrheim n°3</p>
+                            <img src="./images/armes/bornheim.webp" alt="Bonrheim n°3">
+                            <span>Ce pistolet semi-automatique allemand précose permet de tirer avec précision grâce à son faible recul. Se recharge via un
+                                chargeur de cinq cartouches, ou en insérant les cartouches individuellement. Peut être utilisé pour le maniement de deux
+                                armes.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+                        <p>Carreau</p>
+                        <img src="./images/armes/munition_compacte.webp" alt="Munition compacte">
+                        <span>5+1/10</span>
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'un tir au torse touchant un chasseur à 10 mètres.</p>
+                                <span class="degats">Dégâts</span>
+                                <span class="degats">74</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 49.3333333333%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>La distance parcourue par le projectile lorsqu'il tombe n'aura pas assez d'effet pour
+                                    perturber votre visée.</p>
+                                <span>Portée effective</span>
+                                <span>64 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 64%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Combien de fois il est possible de tirer par minute, en tenant compte la préparation
+                                    d'un tir sans aucun autre délai
+                                    entre deux.</p>
+                                <span>Cadence de tir</span>
+                                <span>210 tr/min</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 100%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Une évaluation abstraite de l'efficacité en tenant compte du balancement de l'arme,
+                                    du recul et de la dispersion des
+                                    balles. Pour les armes de mêlée, cela tient compte de la consommation d'endurance,
+                                    de la portée et de l'angle d'attaque.
+                                    Plus le pourcentage est élevé, meilleur est le maniement de l'arme.</p>
+                                <span>Maniement</span>
+                                <span>64%</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 64%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Le temps (en secondes) qu'il vous faut pour recharger entièrement l'arme lorsqu'elle est vide. Cela inclut toute
+                                    technique particulière, telle que le rechargement en bloc.</p>
+                                <span>Vitesse de rechargement</span>
+                                <span>3s</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 15%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>La vitesse (mètre par seconde) à laquelle la balle tirée se déplacera. Les
+                                    projectiles plus lourds (tels que les
+                                    carreaux d'arbalète) se déplacent également dans un arc balistique.</p>
+                                <span>Vitesse balistique</span>
+                                <span>380 m/s</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 38%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts de mélée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>31</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20.6666666667%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">146</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box">
+                        <div class="image-ammo-box">
+                            <div class="infobulle-image">
+                                <p>Un carreau explosif et hautement volatile.</p>
+                                <img src="./images/armes/munition_compacte_incendiaire.webp" alt="Munition compacte incendiaire">
+                            </div>
+                            <div class="infobulle-image">
+                                <p>Des carreaux multiusages modifiés couplés à des cartouches de fusil de chasse qui
+                                    détonnent à l'impact.</p>
+                                <img src="./images/armes/munition_compacte_grande_vitesse.webp" alt="Munition compacte à grande vitesse">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="invisible-margin"></div>
+
+        <footer class=" footer">
+            <ul>
+                <li><a href="mailto:arnaud.grandpierre@gmail.com"> Me contacter</a></li>
+                <li>Ce site n'a pas pour but de gagner de l'argent</li>
+                <li>Hunt Showdown est un jeu créé par <a href="https://www.huntshowdown.com/" target="_blank">Crytek</a>
+                </li>
+                <li>Created by Zan ©</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./js/lightbox.js" type="module"></script>
+    <script src="./js/armes.js"></script>
+</body>
+
+</html>

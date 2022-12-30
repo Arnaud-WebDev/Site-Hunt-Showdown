@@ -1087,6 +1087,57 @@ body#armes p {
 }
 
 /* Container pour le champs de recherche FIN */
+/* CONTAINER EMPLACEMENT ARME */
+.container-size-weapon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-size-weapon {
+  width: 60%;
+  margin: 10px;
+  padding: 5px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-family: "Noto Serif", sans-serif;
+  border-radius: 3px;
+}
+
+.button-size-weapon-red {
+  width: 60%;
+  margin: 10px;
+  padding: 5px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-family: "Noto Serif", sans-serif;
+  border-radius: 3px;
+}
+
+/* CONTAINER EMPLACEMENT ARME FIN */
+/* CONTAINER ARME */
 .container-weapon-container {
   width: 100%;
   height: 100%;
@@ -1290,7 +1341,7 @@ body#armes p {
   position: relative;
 }
 
-/* Les ligne de stats */
+/* Les lignes de stats */
 .grey-line {
   width: 100%;
   height: 5px;
@@ -1318,6 +1369,8 @@ body#armes p {
   z-index: 1;
 }
 
+/* Les lignes de stats fin*/
+/* CONTAINER ARMES FIN */
 /* INFOBULLE  */
 .weapon-box span {
   display: none;
@@ -1348,7 +1401,25 @@ body#armes p {
     width: 40%;
     font-size: 1.2rem;
   }
+  /* CONTAINER EMPLACEMENT ARME */
+  .container-size-weapon {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-size-weapon {
+    width: 20%;
+  }
+  .button-size-weapon-red {
+    width: 20%;
+  }
+  /* CONTAINER EMPLACEMENT ARME FIN */
   /* Container pour le champs de recherche FIN */
+  /* CONTAINER ARMES */
   .weapon-capacite {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1416,6 +1487,7 @@ body#armes p {
   .weapon-damage span {
     font-size: 0.7rem;
   }
+  /* CONTAINER ARMES FIN */
   /* ANIMATION  */
   .weapon-container:first-child {
     -webkit-animation-name: fade-weapon-container;
