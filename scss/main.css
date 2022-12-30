@@ -1180,6 +1180,19 @@ body#armes p {
           flex-direction: column;
 }
 
+.weapon-box-arc {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .weapon-ammo-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1207,12 +1220,34 @@ body#armes p {
   height: 100%;
 }
 
+.weapon-box-arc img {
+  width: 100%;
+  height: 100%;
+}
+
 .weapon-damage span {
   font-style: italic;
   font-family: "Noto Serif", sans-serif;
 }
 
 .weapon-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "Noto Serif", sans-serif;
+}
+
+.weapon-box-arc a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1376,6 +1411,10 @@ body#armes p {
   display: none;
 }
 
+.weapon-box-arc span {
+  display: none;
+}
+
 .weapon-damage p {
   display: none;
 }
@@ -1458,6 +1497,12 @@ body#armes p {
   }
   .weapon-box a {
     font-size: 0.9rem !important;
+  }
+  .weapon-box-arc a {
+    font-size: 0.9rem !important;
+  }
+  .weapon-box-arc img {
+    width: 30%;
   }
   .weapon-ammo-box {
     width: 30%;
@@ -1617,6 +1662,45 @@ body#armes p {
   }
   .weapon-box:hover span,
   .weapon-box:focus span {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  .weapon-box-arc span {
+    display: block;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 250px;
+    color: white;
+    background: #33383b;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0) rotate(-12deg);
+            transform: scale(0) rotate(-12deg);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-box-arc a span::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #33383b;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  .weapon-box-arc:hover span,
+  .weapon-box-arc:focus span {
     -webkit-transform: scale(1) rotate(0);
             transform: scale(1) rotate(0);
     opacity: 1;

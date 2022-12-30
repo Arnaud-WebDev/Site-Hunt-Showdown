@@ -104,6 +104,13 @@ body#armes p {
   display: flex;
   flex-direction: column;
 }
+.weapon-box-arc {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+}
 .weapon-ammo-box {
   display: flex;
   justify-content: center;
@@ -121,11 +128,24 @@ body#armes p {
   width: 100%;
   height: 100%;
 }
+.weapon-box-arc img {
+  width: 100%;
+  height: 100%;
+}
 .weapon-damage span {
   font-style: italic;
   font-family: "Noto Serif", sans-serif;
 }
 .weapon-box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: "Noto Serif", sans-serif;
+}
+.weapon-box-arc a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,6 +259,9 @@ body#armes p {
 .weapon-box span {
   display: none;
 }
+.weapon-box-arc span {
+  display: none;
+}
 
 .weapon-damage p {
   display: none;
@@ -307,6 +330,12 @@ body#armes p {
   }
   .weapon-box a {
     font-size: 0.9rem !important;
+  }
+  .weapon-box-arc a {
+    font-size: 0.9rem !important;
+  }
+  .weapon-box-arc img {
+    width: 30%;
   }
   .weapon-ammo-box {
     width: 30%;
@@ -408,6 +437,41 @@ body#armes p {
   }
   .weapon-box:hover span,
   .weapon-box:focus span {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  .weapon-box-arc span {
+    display: block;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 250px;
+    color: white;
+    background: rgb(51, 56, 59);
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transform: scale(0) rotate(-12deg);
+    transition: all 0.35s;
+    opacity: 0;
+    z-index: 2;
+    font-family: "Noto Serif", sans-serif;
+    max-width: 15%;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+  }
+  .weapon-box-arc a span::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid rgb(51, 56, 59);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  .weapon-box-arc:hover span,
+  .weapon-box-arc:focus span {
     transform: scale(1) rotate(0);
     opacity: 1;
   }
