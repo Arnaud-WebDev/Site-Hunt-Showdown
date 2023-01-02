@@ -1106,34 +1106,55 @@ body#armes p {
   width: 60%;
   margin: 10px;
   padding: 5px;
-  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(51%, #434343), to(#000000));
+  background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
+  color: white;
   text-decoration: none;
   font-family: "Noto Serif", sans-serif;
   border-radius: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.button-size-weapon:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  text-decoration: none;
 }
 
 .button-size-weapon-red {
   width: 60%;
   margin: 10px;
   padding: 5px;
-  background-color: red;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff0000), color-stop(51%, #3d0808), to(#ff0000));
+  background-image: linear-gradient(to right, #ff0000 0%, #3d0808 51%, #ff0000 100%);
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
   text-decoration: none;
   font-family: "Noto Serif", sans-serif;
+  font-style: italic;
   border-radius: 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.button-size-weapon-red:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  text-decoration: none;
 }
 
 /* CONTAINER EMPLACEMENT ARME FIN */
@@ -1974,6 +1995,25 @@ body#armes p {
   }
 }
 
+/* .btn-grad {
+  background-image: linear-gradient(to right, #000000 0%, #434343 51%, #000000 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+} */
 body#patchnotes {
   background: url(../images/Hunt-Wallpaper-6-1920x1080.jpg) fixed no-repeat center;
   background-size: cover;
