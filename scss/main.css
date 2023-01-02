@@ -1732,8 +1732,8 @@ body#armes p {
   .weapon-box-arc span {
     display: block;
     position: absolute;
-    margin-top: 120px;
-    margin-left: 250px;
+    margin-top: 80px;
+    margin-left: 50px;
     color: white;
     background: #33383b;
     padding: 5px;
@@ -1755,7 +1755,9 @@ body#armes p {
     content: "";
     position: absolute;
     top: -10px;
-    left: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     width: 0;
     height: 0;
     border-bottom: 10px solid #33383b;
