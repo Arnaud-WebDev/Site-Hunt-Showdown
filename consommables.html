@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="description"
+        content="Découvrez toutes les armes de Hunt Showdown, ainsi que toutes leurs statistiques, leurs apparences et les balles spéciales qui vont avec !">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="icon" sizes="96x96" href="./images/Hunt_Logomark_White.webp" type="image/png">
+    <title>Hunt Showdown, Fansite</title>
+</head>
+
+<body id="armes">
+    <div class="content">
+
+        <header>
+            <nav>
+                <div>
+                    <a href="./index.html">
+                        <img src="./images/Hunt_Logomark_White.webp" alt="logo Hunt Showdown" class="logoNav">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="video.html">Mes Vidéos</a>
+                    </li>
+                    <li>
+                        <a href="armes.html">Armes/Statistiques</a>
+                    </li>
+                    <li>
+                        <a href="patchnotes.html">Patch Notes</a>
+                    </li>
+                    <li>
+                        <a href="./lore/lore.html">Le Lore</a>
+                    </li>
+                    <li>
+                        <a href="./chasseurs.html">Chasseurs Légendaires</a>
+                    </li>
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="btn-armes"></div>
+
+        <div class="content">
+
+            <h1 class="armes-h1">LES ARMES</h1>
+
+            <p class="p-armes">Il existe une variété astronomique d'armes dans Hunt Showdown, vous trouverez ici leurs
+                statistiques et un
+                visuel de celles-ci. Elles peuvent se débloquer via la lignée au fur et à mesure où l'on passe des
+                rangs. Pour
+                les variantes des armes en elle-même, elles se débloquent en jouant avec celle de base, en engrangeant
+                de l'XP.
+            </p>
+
+            <div class="container-input">
+                <input class="input" type="text" placeholder="Recherchez un consommable..." id="maRecherche" onkeyup="filter()">
+            </div>
+
+            <div class="container-size-weapon">
+                <a href="armes.html" class="button-size-weapon">
+                    <div>Toutes les armes</div>
+                </a>
+                <a href="armes-petit.html" class="button-size-weapon">
+                    <div>Petit emplacement</div>
+                </a>
+                <a href="armes-moyen.html" class="button-size-weapon">
+                    <div>Moyen emplacement</div>
+                </a>
+                <a href="armes-grand.html" class="button-size-weapon">
+                    <div>Grand emplacement</div>
+                </a>
+
+            </div>
+
+            <div class="container-size-weapon">
+                <a href="outils.html" class="button-size-weapon">
+                    <div>Outils</div>
+                </a>
+                <a href="consommables.html" class="button-size-weapon-red">
+                    <div>Consommables</div>
+                </a>
+            </div>
+
+            <div class="container-weapon-container" id="tableau">
+
+                <!-- Boîte de munitions-->
+                <div class="weapon-container">
+                    <div class="weapon-box-arc">
+                        <a href="./images/armes/boite-munition.webp">
+                            <p class="title-arme">Boîte de munitions</p>
+                            <img src="./images/armes/boite-munition.webp" alt="Boîte de munitions">
+                            <span>Cette petite boîte de munitions portable recharge la moitié des munitions de réserve de vos armes, y compris les munitions
+                                spéciales.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat"></div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>31</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20.6666666667%"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="weapon-stat"></div>
+
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat"></div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>67</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 44.6666666667%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat"></div>
+
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat"></div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">65</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat"></div>
+                    </div>
+
+                    <div class="weapon-ammo-box">
+
+
+                    </div>
+                </div>
+
+                <!-- Bâton de dynamite-->
+                <div class="weapon-container">
+                    <div class="weapon-box">
+                        <a href="./images/armes/baton-dynamite.webp">
+                            <p class="title-arme">Bâton de dynamite</p>
+                            <img src="./images/armes/baton-dynamite.webp" alt="Bâton de dynamite">
+                            <span>Un bâton de dynamite qui génère une énorme détonation. Mèche de quatre secondes.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'un tir au torse touchant un chasseur à 10 mètres.</p>
+                                <span class="degats">Dégâts</span>
+                                <span class="degats">750</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 100%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Rayon d'effet en mètres</p>
+                                <span>Rayon d'effet</span>
+                                <span>8m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 80%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Pour les armes à feu : la portée (en mètres) à laquelle les armes tuent un chasseur en un seul coup - généralement un tir en
+                                    pleine tête. Certaines armes très puissantes tuent aussi d'un coup au torse. Pour les armes de jet : la portée maximale à
+                                    laquelle cet objet peut être lancé.</p>
+                                <span>Portée effective</span>
+                                <span>20 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">18</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box"></div>
+
+                </div>
+
+                <!-- Bâton de dynamite étanche-->
+                <div class="weapon-container">
+                    <div class="weapon-box">
+                        <a href="./images/armes/baton-dynamite-étanche.webp">
+                            <p class="title-arme">Bâton de dynamite étanche</p>
+                            <img src="./images/armes/baton-dynamite-étanche.webp" alt="Bâton de dynamite étanche">
+                            <span>Un bâton de dynamite avec une mèche à poudre modifiée permettant une détonation sous l'eau et dans les nuages de bombes
+                                suffocantes.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'un tir au torse touchant un chasseur à 10 mètres.</p>
+                                <span class="degats">Dégâts</span>
+                                <span class="degats">750</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 100%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Rayon d'effet en mètres</p>
+                                <span>Rayon d'effet</span>
+                                <span>8m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 80%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Pour les armes à feu : la portée (en mètres) à laquelle les armes tuent un chasseur en un seul coup - généralement un tir en
+                                    pleine tête. Certaines armes très puissantes tuent aussi d'un coup au torse. Pour les armes de jet : la portée maximale à
+                                    laquelle cet objet peut être lancé.</p>
+                                <span>Portée effective</span>
+                                <span>20 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">24</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box"></div>
+
+                </div>
+
+                <!-- Grenade accordéon-->
+                <div class="weapon-container">
+                    <div class="weapon-box-arc">
+                        <a href="./images/armes/grenade-accordeon.webp">
+                            <p class="title-arme">Grenade accordéon</p>
+                            <img src="./images/armes/grenade-accordeon.webp" alt="Grenade accordéon">
+                            <span>Bobine de fil barbelé sous tension, qui se déploie violemment lorsque projetée. S'accroche à et déchiquette tout ce qui tente
+                                de passer à travers.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'un tir au torse touchant un chasseur à 10 mètres.</p>
+                                <span class="degats">Dégâts</span>
+                                <span class="degats">200</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 100%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Rayon d'effet en mètres</p>
+                                <span>Rayon d'effet</span>
+                                <span>2m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Pour les armes à feu : la portée (en mètres) à laquelle les armes tuent un chasseur en un seul coup - généralement un tir en
+                                    pleine tête. Certaines armes très puissantes tuent aussi d'un coup au torse. Pour les armes de jet : la portée maximale à
+                                    laquelle cet objet peut être lancé.</p>
+                                <span>Portée effective</span>
+                                <span>10 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 10%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>52</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 34.6666666667%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>112</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 74.6666666667%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">48</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box"></div>
+
+                </div>
+
+                <!-- Grenade aveuglante-->
+                <div class="weapon-container">
+                    <div class="weapon-box-pax">
+                        <a href="./images/armes/grenade-aveuglante.webp">
+                            <p class="title-arme">Grenade aveuglante</p>
+                            <img src="./images/armes/grenade-aveuglante.webp" alt="Grenade aveuglante">
+                            <span>Grenade aveuglante artisanale au mercure, pouvant sésorianter plusieurs cibles à la fois.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Rayon d'effet en mètres.</p>
+                                <span>Rayon d'effet</span>
+                                <span>8m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 80%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>La distance parcourue par le projectile lorsqu'il tombe n'aura pas assez d'effet pour
+                                    perturber votre visée.</p>
+                                <span>Portée effective</span>
+                                <span>20m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20%"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">47</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box"></div>
+
+                </div>
+
+                <!-- Grenade chaos-->
+                <div class="weapon-container">
+                    <div class="weapon-box-pax">
+                        <a href="./images/armes/grenade-chaos.webp">
+                            <p class="title-arme">Grenade chaos</p>
+                            <img src="./images/armes/grenade-chaos.webp" alt="Grenade chaos">
+                            <span>Paquet de pétards que vous pouvez utiliser pour distraire temporairement les ennemis proches. Dure environ 30 secondes.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Pour les armes à feu : la portée (en mètres) à laquelle les armes tuent un chasseur en un seul coup - généralement un tir
+                                    en pleine tête. Certaines armes très puissantes tuent aussi d'un coup au torse. Pour les armes de jet : la portée maximale à
+                                    laquelle cet objet peut être lancé.</p>
+                                <span>Portée effective</span>
+                                <span>15m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 15%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts de mélée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box"></div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">15</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box">
+
+
+                    </div>
+                </div>
+
+                <!-- Grenade collante-->
+                <div class="weapon-container">
+                    <div class="weapon-box-pax">
+                        <a href="./images/armes/grenade-collante.webp">
+                            <p class="title-arme">Grenade collante</p>
+                            <img src="./images/armes/grenade-collante.webp" alt="Grenade collante">
+                            <span>Charge de dynamite accouplé à une structure collante qui peut être fixée à des objets et des ennemis. Avec ses 8 secondes, sa
+                                mèche dure deux fois plus longtemps que le bâton de dynamite.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'un tir au torse touchant un chasseur à 10 mètres.</p>
+                                <span class="degats">Dégâts</span>
+                                <span class="degats">1000</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 100%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Rayon d'effet en mètres</p>
+                                <span>Rayon d'effet</span>
+                                <span>8m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 80%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Pour les armes à feu : la portée (en mètres) à laquelle les armes tuent un chasseur en un seul coup - généralement un tir en
+                                    pleine tête. Certaines armes très puissantes tuent aussi d'un coup au torse. Pour les armes de jet : la portée maximale à
+                                    laquelle cet objet peut être lancé.</p>
+                                <span>Portée effective</span>
+                                <span>15 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 15%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">64</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box"></div>
+
+                </div>
+
+                <!-- Grenade incendiaire-->
+                <div class="weapon-container">
+                    <div class="weapon-box-pax">
+                        <a href="./images/armes/grenade-incendiaire.webp">
+                            <p class="title-arme">Grenade incendiaire</p>
+                            <img src="./images/armes/grenade-incendiaire.webp" alt="Grenade incendiaire">
+                            <span>Liquide inflammable dans un récipient en verre qui éclate à l'impact. Le liquide enflammé couvre une vaste zone.</span>
+                        </a>
+                    </div>
+                    <div class="weapon-capacite">
+
+                    </div>
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Rayon d'effet en mètres</p>
+                                <span>Rayon d'effet</span>
+                                <span>2m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Pour les armes à feu : la portée (en mètres) à laquelle les armes tuent un chasseur en un seul coup - généralement un tir en
+                                    pleine tête. Certaines armes très puissantes tuent aussi d'un coup au torse.
+                                    Pour les armes de jet : la portée maximale à laquelle cet objet peut être lancé.</p>
+                                <span>Portée effective</span>
+                                <span>20 m</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 20%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Le temps que dure l'effet en secondes.</p>
+                                <span class="degats">Durée de l'effet</span>
+                                <span class="degats">120s</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="red-line" style="width: 40%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée régulière frappant un chasseur dans la partie supérieure du torse.</p>
+                                <span>Dégâts de mêlée</span>
+                                <span>13</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 8.6666666667%"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-stats-box">
+
+                        <div class="weapon-stat">
+                            <div class="weapon-damage">
+                                <p>Valeur des dégâts d'une attaque de mêlée lourde chargée frappant un chasseur dans la
+                                    partie supérieure du torse.</p>
+                                <span>Dégâts lourds de mêlée</span>
+                                <span>27</span>
+                            </div>
+                            <div class="weapon-line">
+                                <span class="grey-line"></span>
+                                <span class="white-line" style="width: 18%"></span>
+                            </div>
+                        </div>
+
+                        <div class="weapon-stat">
+                            <div class="weapon-cost">
+                                <span>Coût</span>
+                                <span class="cost">30</span>
+                                <img src="./images/armes/dollar.webp" alt="Hunt Dollar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weapon-ammo-box"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="invisible-margin"></div>
+
+        <footer class=" footer">
+            <ul>
+                <li><a href="mailto:arnaud.grandpierre@gmail.com"> Me contacter</a></li>
+                <li>Ce site n'a pas pour but de gagner de l'argent</li>
+                <li>Hunt Showdown est un jeu créé par <a href="https://www.huntshowdown.com/" target="_blank">Crytek</a>
+                </li>
+                <li>Created by Zan ©</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./js/lightbox.js" type="module"></script>
+    <script src="./js/armes.js"></script>
+</body>
+
+</html>
