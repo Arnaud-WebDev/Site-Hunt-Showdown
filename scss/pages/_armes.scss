@@ -366,7 +366,9 @@ body#armes p {
   .weapon-capacite-ammo span {
     font-size: 0.9rem;
   }
-
+  .weapon-box img {
+    width: 80%;
+  }
   .weapon-box a {
     font-size: 0.9rem !important;
   }
@@ -470,7 +472,8 @@ body#armes p {
     content: "";
     position: absolute;
     top: -10px;
-    left: 30px;
+    left: 50%;
+    transform: translate(-50%);
     width: 0;
     height: 0;
     border-bottom: 10px solid rgb(51, 56, 59);
